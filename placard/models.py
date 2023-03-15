@@ -61,3 +61,45 @@ class Persona(models.Model):
         if not self.slug:
             self.slug = slugify(self.shamefull_nickname)
         return super().save(*args, **Kwargs)
+
+
+class Comment(models.Model):
+
+    persona = models.ForeignKey(
+        Persona, on_delete=models.CASCADE, related_name='comments'
+        )
+    author = models.ForeignKey(
+        User, on_delete=models.CASCADE, related_name='author_comments'
+        )
+    content = models.CharField(max_length=2000)
+    created_on = models.DateTimeField(auto_now=True)
+    updated_on = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        """
+        To sort comments in ascending oder from the oldest to the newest
+        """
+        ordering = ['created_on']
+
+    def __str__(self):
+        """
+        To return a string representation of the comment -
+        displaying comments in the Django admin interface
+        """
+        return f'{self.user} commented persona {self.persona}'
+
+
+class Like(models.Model):
+    author = models.ForeignKey(
+        User, on_delete=models.CASCADE, related_name='author_likes'
+        )
+    persona = models.ForeignKey(
+        Persona, on_delete=models.CASCADE, related_name='persona_likes'
+        )
+
+    def __str__(self):
+        """
+        To return a string representation of like -
+        displaying likes in the Django admin interface
+        """
+        return f'{self.author} liked {self.persona}'
