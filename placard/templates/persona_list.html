@@ -8,30 +8,49 @@ Persona List
     <div class="row">
 
         <!-- Blog Entries Column -->
-        <div class="col-12 mt-3 left">
+        <div class="col-12 mt-3 mx-auto ">
             <div class="row">
                 {% for persona in persona_list %}
-                <div class="col-md-4">
+                <div class="col-md-4 m-4 mx-auto">
                     <div class="card mb-4">
                         <div class="card-body">
                             <div class="image-container">
-                                {% if "placeholder" in  %}
-                                <img class="card-img-top"
-                                    src="">
+                                {% if "placeholder" in persona.shameful_pic.url %}
+                                <img class="card-img-top" src="https://codeinstitute.s3.amazonaws.com/fullstack/blog/default.jpg">
                                 {% else %}
-                                <img class="card-img-top" src="">
+                                <img class="card-img-top" src="{{ persona.shameful_pic.url }}">
                                 {% endif %}
-                                <div class="image-flash">
-                                    <p class="author">Author: {{ persona.author }}</p>
-                                </div>
+
                             </div>
-                            <a href="" class="">
+
+                            <!-- Persona Nickname and link to Persona Details -->
+
+                            <a href="{% url 'persona_detail' persona.slug  %}" class="persona-link">
                                 <h2 class="card-title">{{ persona.shamefull_nickname }}</h2>
-                                <p class="card-text">{{ }}</p>
+                                <p class="card-text">Discover my shameless Me</p>
                             </a>
                             <hr />
-                            <p class="card-text text-muted h6">{{ persona.created_on}} <i class="far fa-heart"></i>
-                                {{ persona_listnumber_of_likes }}</p>
+                            <div class="d-flex justify-content-between small text-secondary">
+
+                                <!-- Date Of Creation -->
+
+                                <span>{{persona.created_on}}</span>
+                                <div>
+
+                                    <!-- Number Of Likes -->
+
+                                    {% if persona.number_of_likes > 0 %}
+                                    <span><i class="fa-solid fa-heart"></i> {{persona.number_of_likes}}</span>
+                                    {% endif %}
+
+                                    <!-- Number Of Comments -->
+
+                                    {% if persona.number_of_comments > 0 %}
+                                    <span><i class="fa-solid fa-message"></i>
+                                        {{persona.number_of_comments}}</span>
+                                    {% endif %}
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
