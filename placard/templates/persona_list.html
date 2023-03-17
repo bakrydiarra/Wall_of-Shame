@@ -14,9 +14,13 @@ Persona List
                 <div class="col-md-4 m-4 mx-auto">
                     <div class="card mb-4">
                         <div class="card-body">
+
+                            <!-- Persona image -->
+
                             <div class="image-container">
                                 {% if "placeholder" in persona.shameful_pic.url %}
-                                <img class="card-img-top" src="https://codeinstitute.s3.amazonaws.com/fullstack/blog/default.jpg">
+                                <img class="card-img-top"
+                                    src="https://codeinstitute.s3.amazonaws.com/fullstack/blog/default.jpg">
                                 {% else %}
                                 <img class="card-img-top" src="{{ persona.shameful_pic.url }}">
                                 {% endif %}
