@@ -17,6 +17,7 @@ class CommentAdmin(admin.ModelAdmin):
     list_display = ('author', 'content', 'persona', 'created_on')
     list_filter = ('author', 'created_on')
     search_fields = ('author', 'content')
+    summernote_fields = ('content',)
 
 
 @admin.register(Like)
