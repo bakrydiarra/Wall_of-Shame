@@ -71,7 +71,7 @@ class Comment(models.Model):
     author = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name='author_comments'
         )
-    content = models.CharField(max_length=2000)
+    content = models.TextField(max_length=2000)
     created_on = models.DateTimeField(auto_now=True)
     updated_on = models.DateTimeField(auto_now=True)
 
