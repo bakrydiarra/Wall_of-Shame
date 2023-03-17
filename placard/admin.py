@@ -13,7 +13,7 @@ class PersonaAdmin(SummernoteModelAdmin):
 
 
 @admin.register(Comment)
-class CommentAdmin(admin.ModelAdmin):
+class CommentAdmin(SummernoteModelAdmin):
     list_display = ('author', 'content', 'persona', 'created_on')
     list_filter = ('author', 'created_on')
     search_fields = ('author', 'content')
