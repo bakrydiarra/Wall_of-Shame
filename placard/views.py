@@ -12,10 +12,11 @@ class PersonaList(generic.ListView):
 
 class PersonaDetail(View):
 
-    def get(self, request, *args, **kargs):
-        persona = get_object_or_404(slug=slug)
+    def get(self, request, slug, *args, **kargs):
+        queryset = Persona.objects
+        persona = get_object_or_404(queryset, slug=slug)
         comments = persona.comments.all()
-        Liked = False
+        liked = False
         if persona.likes.filter(id=self.request.user.id).exists():
             liked = True
 
@@ -25,6 +26,6 @@ class PersonaDetail(View):
             {
                 "persona": persona,
                 "comments": comments,
-                "likes": liked
+                "liked": liked
             },
         )
