@@ -22,7 +22,7 @@ class PersonaDetail(View):
 
         return render(
             request,
-            "post_detail.html",
+            "persona_detail.html",
             {
                 "persona": persona,
                 "comments": comments,
