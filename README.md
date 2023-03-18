@@ -33,7 +33,10 @@ Overview:
 
 * [Technologies Used](#technologies-used)
   * [Languages Used](#languages-used)
-  * [Frameworks, Libraries & Programs Used](#frameworks-libraries--programs-used)
+  * [Frameworks, Libraries](#frameworks-libraries)
+  * [Storage & Hosting](#storage--hosting)
+  * [IDE & Version Control](#ide--version-control)
+  * [Other tools](#other-tools)
 
 * [Deployment & Local Development](#deployment--local-development)
   * [Deployment](#deployment)
@@ -123,19 +126,47 @@ Code Institute have an amazing channel for all things accessibility (a11y-access
 
 ## Technologies Used
 
-👩🏻‍💻 View an example of a completed Technologies Used section [here](https://github.com/kera-cudmore/Bully-Book-Club#Technologies-Used)
 
 ### Languages Used
 
-Make a note here of all the languages used in creating your project. For the first project this will most likely just be HTML & CSS.
+- [HTML5](https://en.wikipedia.org/wiki/HTML5)
 
-### Frameworks, Libraries & Programs Used
+- [CSS3](https://en.wikipedia.org/wiki/CSS)
 
-Add any frameworks, libraries or programs used while creating your project.
+- [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 
-Make sure to include things like git, GitHub, the program used to make your wireframes, any programs used to compress your images, did you use a CSS framework like Bootstrap? If so add it here (add the version used).
+- [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
 
-A great tip for this section is to include them as you use them, that way you won't forget what you ended up using when you get to the end of your project.
+### Frameworks, Libraries
+
+- [Django 3.2.16](https://www.djangoproject.com/) - Used to rapidly develop the site.
+- [Gunicorn](https://gunicorn.org/) - Used for being a pure-Python HTTP server for WSGI applications
+- [django-summernote](https://github.com/summernote/django-summernote) - Used as the WYSIWYG editor in the admin panel.
+- [Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/) - Used to format forms.
+- [dj3-cloudinary-storage](https://pypi.org/project/dj3-cloudinary-storage/) - Used to serve static files and media. 
+- [Psycopg2](https://pypi.org/project/psycopg2/) - Used as a PostgreSQL adaptor
+- [Django allauth](https://django-allauth.readthedocs.io/en/latest/index.html)  - Used to implement account authorisation and providing associated templates
+- [jquery library](https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js) - Used to fade out alert messages
+- [dj_database_url](https://pypi.org/project/dj-database-url/) - Used to allow database urls to connect to the postgres db
+- [Bootstrap 5](https://getbootstrap.com/docs/5.0/getting-started/introduction/) - Used to develop the layout of the site.
+- [Font Awesome](https://fontawesome.com/) - Used to produce icons on the site.
+- [Google Fonts](https://fonts.google.com/) - Used to import the site's font family.
+
+## Storage & Hosting
+
+- [Github](https://github.com/) - Used to create and store the project repository.
+- [Heroku Platform](https://id.heroku.com/) - Used to deploy the live project.
+- [ElephantSQL](https://www.elephantsql.com/) - Used to host the website's PostgreSQL database.
+- [Cloudinary](https://cloudinary.com/) - Used to store post images.
+
+## IDE & Version Control
+
+- [Gitpod](https://gitpod.io/) - Used to create files and write code.
+- [Git](https://git-scm.com/) - Used for version control.
+
+## Other Tools
+
+- [Balsamiq](https://balsamiq.com/) - Used to create Wireframes for the project.
 
 ## Deployment & Local Development
 
