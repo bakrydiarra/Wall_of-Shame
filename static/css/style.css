@@ -1,0 +1,14 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Comforter&family=Nunito&family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/*--------------------------------------------Colors*/
+
+body {
+    background-color: #FEFAE8;
+}
