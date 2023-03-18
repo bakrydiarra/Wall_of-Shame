@@ -38,12 +38,8 @@ Overview:
   * [IDE & Version Control](#ide--version-control)
   * [Other tools](#other-tools)
 
-* [Deployment & Local Development](#deployment--local-development)
-  * [Deployment](#deployment)
-  * [Local Development](#local-development)
-    * [How to Fork](#how-to-fork)
-    * [How to Clone](#how-to-clone)
-
+* [Deployment](#deployment)
+  
 * [Testing](#testing)
 
 * [Credits](#credits)
@@ -152,41 +148,180 @@ Code Institute have an amazing channel for all things accessibility (a11y-access
 - [Font Awesome](https://fontawesome.com/) - Used to produce icons on the site.
 - [Google Fonts](https://fonts.google.com/) - Used to import the site's font family.
 
-## Storage & Hosting
+### Storage & Hosting
 
 - [Github](https://github.com/) - Used to create and store the project repository.
 - [Heroku Platform](https://id.heroku.com/) - Used to deploy the live project.
 - [ElephantSQL](https://www.elephantsql.com/) - Used to host the website's PostgreSQL database.
 - [Cloudinary](https://cloudinary.com/) - Used to store post images.
 
-## IDE & Version Control
+### IDE & Version Control
 
 - [Gitpod](https://gitpod.io/) - Used to create files and write code.
 - [Git](https://git-scm.com/) - Used for version control.
 
-## Other Tools
+### Other Tools
 
 - [Balsamiq](https://balsamiq.com/) - Used to create Wireframes for the project.
 
-## Deployment & Local Development
+## Deployment 
 
-👩🏻‍💻 View an example of a completed Deployment & Local Development section [here](https://github.com/kera-cudmore/TheQuizArms#Deployment)
 
-### Deployment
+### Creating a Gitpod Workspace
 
-Include instructions here on how to deploy your project. For your first project you will most likely be using GitHub Pages.
+1. Log in to GitHub and go to the [Code Institute student template for Gitpod](https://github.com/Code-Institute-Org/gitpod-full-template)
+2. Click 'Use this Template' next to the Green Gitpod button.
+3. Add a repository name and click 'Create reposiory from template'.
+4. This will create a copy of the template in your own repository. Now you can click the green 'Gitpod' button to open a workspace in Gitpod.
 
-### Local Development
 
-The local development section gives instructions on how someone else could make a copy of your project to play with on their local machine. This section will get more complex in the later projects, and can be a great reference to yourself if you forget how to do this.
+### Installing support libraries and Django
 
-#### How to Fork
+```
+$ pip3 install 'django<4' gunicorn
+$ pip3 install dj_database_url psycopg2
+$ pip3 install dj3-cloudinary-storage
+$ pip3 install django-crispy-forms  
+$ pip3 install crispy-bootstrap5
+$ pipe install django-summernote
+```
 
-Place instructions on how to fork your project here.
+### Create requirements file
 
-#### How to Clone
+```
+$ pip3 freeze --local > requirements.txt
+```
 
-Place instructions on how to clone your project here.
+### Create a project
+
+```
+$ django-admin startproject wall_of_shame .
+```
+
+### Create placard & contact app and add them to settings.py
+
+```
+$ python3 manage.py startapp placard
+$ python3 manage.py startapp contact
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.sites',
+    'cloudinary_storage',
+    'django.contrib.staticfiles',
+    'cloudinary',
+    'crispy_forms',
+    'crispy_bootstrap5',
+    'django_summernote',
+    'placard',
+    'contact',
+]
+```
+
+### Migrate changes
+
+```
+$ python manage.py makemigrations
+$ python manage.py migrate
+```
+
+
+### Creating a database
+
+1. Go to [ElephantSQL.com](https://elephantsql.com/) and select to create a database
+2. Select the free database plan
+3. Select “Log in with GitHub” and authorise with GitHub
+4. Create new team form. You can use your name, read and agree to the T&C's, select yes for GDPR, provide your email address and click Create Team. Your account will be created 
+5. From your dashboard, click “Create New Instance”
+6. Set up your plan. Give it the same name as your project, select the free plan. Select "select region" and select a region close to you.
+7. Click review, and if the details are correct, click create instance.
+8. Return to the ElephantSQL dashboard and click on the database instance name for this project
+9. In the URL section, clicking the copy icon will copy the database URL to your clipboard
+
+```
+import os
+import dj_database_url
+if os.path.isfile('env.py'):
+  import env
+```
+
+### Creating Cloudinary account
+
+1. The app uses Cloudinary to host the post images therefore a Cloudinary account will be required. 
+2. Log in to [Cloudinary](https://cloudinary.com/) or create an account for free.
+3. Navigate to the Dashboard on Cloudinary.
+4. Copy and store the value of the 'API Environment Variable" beginning at cloudinary:// until the end, this will be used in the Heroku Config Vars. 
+
+### Creating env.py
+
+1. place env.py to the project root directory
+2. add env.py to git.ignore to avoid pushing this file to GitHub
+3. Add the following entries into the file
+
+```
+import os
+os.environ["DATABASE_URL"] = the databse URL from ElephantSQL
+os.environ["SECRET_KEY"]= a string used to generate security keys
+os.environ["CLOUDINARY_URL"] = The url for Cloudinary storage
+```
+
+### Creating a Procfile to project root directory
+
+```
+web: gunicorn wall_of_shame.wsgi
+```
+
+### Creating an application with Heroku
+
+
+1. Create a Heroku account and log in.
+2. Create a new app. When you do so, select the closest region to you and give it an appropriate name. Note Heroku names must be unique
+3. In your app Settings, add the config var DATABASE_URL, and for the value, paste in your database url from ElephantSQL.
+4. In your app Settings, add the config var DJANGO_SECRET_KEY. Generate a DJANGO_SECRET_KEY and paste it in. Keep this secret.
+5. Connect Heroku to github repository
+6. Deploy from branch manually (before final deployment: the debug setting in settings.py was set to false for security and  the DISABLE_COLLECTSTATIC config var in Heroku has to be removed)
+
+```
+# SECURITY WARNING: don't run with debug turned on in production!
+DEBUG = False
+```
+
+
+
+
+### Forking the GitHub Repository
+
+Forks are used to propose changes to someone else's project or to use someone else's project as a starting point for your own idea. By forking the GitHub Repository you make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository.
+
+To Fork a Github Repository:
+
+1. Log in to GitHub and go to the [GitHub Repository](https://github.com/Isabella-Mitchell/gather-recipe-website)
+2. Locate the Fork button in the top-right corner of the page, click Fork.
+3. You should now have a copy of the original repository in your GitHub account.
+
+### Making a Local Clone
+
+You will now have a fork of the repository, but you don't have the files in that repository locally on your computer.
+
+To make a local clone:
+
+1. Log in to GitHub and go to the [GitHub Repository](https://github.com/Isabella-Mitchell/lonely-house)
+2. Above the list of files, click  Code.
+3. To clone the repository using HTTPS, under "Clone with HTTPS", click the 'Copy' icon. To clone the repository using an SSH key, including a certificate issued by your organization's SSH certificate authority, click Use SSH, then click the 'Copy' icon. To clone a repository using GitHub CLI, click Use GitHub CLI, then click the 'Copy' icon.
+4. Open Git Bash.
+5. Change the current working directory to the location where you want the cloned directory.
+6. Type git clone, and then paste the URL you copied earlier. It will look like this, with your GitHub AE username instead of YOUR-USERNAME:
+
+```
+$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+```
+
+7. Press Enter. Your local clone will be created.
+
+
 
 ## Testing
 
