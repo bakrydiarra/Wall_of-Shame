@@ -27,6 +27,7 @@ class PersonaDetail(View):
             {
                 "persona": persona,
                 "comments": comments,
-                "liked": liked
+                "liked": liked,
+                "comment_form": CommentForm()
             },
         )
