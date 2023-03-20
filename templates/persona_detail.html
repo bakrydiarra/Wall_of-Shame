@@ -60,17 +60,19 @@ Persona Detail
 </h3>
 
 {% if user.is_authenticated %}
-
-  <h4 class="my-5 text-center">Write a comment below</h4>
-  <form method="post" class="mx-auto mt-3 w-50">
+<div class="card mx-auto mtb-3 w-50">
+  <h4 class="card-header">Write a comment below</h4>
+  <div class="card-body">
+  <form method="post">
     {% csrf_token %}
     {{ comment_form | crispy}}
+    <button type="submit" class="btn btn-success ">Post Comment</a>
   </form>
-  
-
-<div class="d-flex justify-content-center my-3">
-  <button type="submit" class="btn btn-success ">Post Comment</a>
 </div>
+</div>
+
+
+
 {%endif%}
 
 <div>
