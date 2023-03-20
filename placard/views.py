@@ -43,7 +43,7 @@ class PersonaDetail(View):
         comment_form = CommentForm(data=request.POST)
 
         if comment_form.is_valid():
-            comment_form.instance.author = request.user.username
+            comment_form.instance.author = request.user
             comment = comment_form.save(commit=False)
             comment.persona = persona
             comment.save()
