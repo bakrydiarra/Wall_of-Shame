@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
 from django.http import HttpResponseRedirect
 from .models import *
@@ -72,4 +72,5 @@ class PersonaLike(view):
             persona.likes.remove(request.user)
         else:
             persona.likes.add(request.user)
-            
+
+        return HttpResponseRedirect(reverse('persona_detail', args=[slug]))
