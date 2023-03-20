@@ -63,7 +63,7 @@ class PersonaDetail(View):
         )
 
 
-class PersonaLike(view):
+class PersonaLike(View):
 
     def post(self, request, slug):
         persona = get_object_or_404(Persona, slug=slug)

@@ -47,6 +47,19 @@ Persona Detail
   </div>
 </div>
 
+{% if user.is_authenticated %}
+
+<form class="d-inline" action="{% url 'persona_like' persona.slug %}" method="post">
+  {% csrf_token %}
+
+  <button type="submit" name="blogpost_id" value="{{persona.slug}}" class="btn btn-success ">
+    {% if liked %} Unlike this Persona {% else %} Like this Persona {% endif %}
+  </button>
+</form>
+{% endif %}
+
+
+
 <h3 class="my-5 text-center">
   {% if persona.number_of_comments > 0 %}
   {% if persona.number_of_comments == 1 %}
@@ -66,7 +79,7 @@ Persona Detail
     <form method="post">
       {% csrf_token %}
       {{ comment_form | crispy}}
-      <button type="submit" class="btn btn-success ">Post Comment</a>
+      <button type="submit" class="btn btn-success ">Post Comment</button>
     </form>
   </div>
 </div>
