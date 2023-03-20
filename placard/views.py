@@ -1,5 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 from django.views import generic, View
+from django.http import HttpResponseRedirect
 from .models import *
 from .forms import CommentForm
 
@@ -59,4 +60,16 @@ class PersonaDetail(View):
                 "liked": liked,
                 "comment_form": CommentForm()
             },
-        )    
+        )
+
+
+class PersonaLike(view):
+
+    def post(self, request, slug):
+        persona = get_object_or_404(Persona, slug=slug)
+
+        if persona.likes.filter(id=request.user.id).exists():
+            persona.likes.remove(request.user)
+        else:
+            persona.likes.add(request.user)
+            
