@@ -59,6 +59,7 @@ class Persona(models.Model):
     def save(self, *args, **Kwargs):
 
         """
+        Reference: https://learndjango.com/tutorials/django-slug-tutorial#slugs
            To use slugify to preopulate shammefull_nickname input into a slug
         """
 

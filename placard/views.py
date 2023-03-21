@@ -16,6 +16,9 @@ def get_landing_page(request):
 
 
 class PersonaList(generic.ListView):
+    """
+    Class to show list of personas
+    """
     model = Persona
     queryset = Persona.objects.order_by('created_on')
     template_name = 'index.html'
@@ -23,6 +26,9 @@ class PersonaList(generic.ListView):
 
 
 class PersonaDetail(View):
+    """
+    Class to show selected persona in detail view
+    """
 
     def get(self, request, slug, *args, **kargs):
         queryset = Persona.objects
@@ -87,11 +93,23 @@ class PersonaLike(View):
 
 
 class CreatePersonaView(CreateView):
+    """
+    Class to add a Persona view to the list
+    """
     model = Persona
     template_name = 'create_persona.html'
     fields = ('shamefull_nickname', 'shameful_song', 'shameful_tv_show', 'shameful_habit', 'shameful_story', 'shameful_pic')
     success_url = reverse_lazy('home')
+    """
+    to make sure that the shamefull_nickname entry
+    from the user is turned into a slug
+    """
     prepopulated_fields = {'slug': ('shamefull_nickname',)}
+
+    """
+    to set the author field of the form instance
+    to the current user before the form is saved.
+    """
 
     def form_valid(self, form):
         form.instance.author = self.request.user
