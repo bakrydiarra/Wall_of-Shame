@@ -5,7 +5,7 @@ from django.views.generic import CreateView
 from django.http import HttpResponseRedirect
 from django.utils.text import slugify
 from .models import *
-from .forms import CommentForm
+from .forms import *
 
 
 def get_landing_page(request):
@@ -97,8 +97,9 @@ class CreatePersonaView(CreateView):
     Class to add a Persona view to the list
     """
     model = Persona
+    form_class = PersonaForm
     template_name = 'create_persona.html'
-    fields = ('shamefull_nickname', 'shameful_song', 'shameful_tv_show', 'shameful_habit', 'shameful_story', 'shameful_pic')
+    # fields = ('shamefull_nickname', 'shameful_song', 'shameful_tv_show', 'shameful_habit', 'shameful_story', 'shameful_pic')
     success_url = reverse_lazy('home')
     """
     to make sure that the shamefull_nickname entry
