@@ -1,7 +1,9 @@
 from django.shortcuts import render, get_object_or_404, reverse, redirect
+from django.urls import reverse_lazy
 from django.views import generic, View
 from django.views.generic import CreateView
 from django.http import HttpResponseRedirect
+from django.utils.text import slugify
 from .models import *
 from .forms import CommentForm
 
@@ -88,3 +90,9 @@ class CreatePersonaView(CreateView):
     model = Persona
     template_name = 'create_persona.html'
     fields = ('shamefull_nickname', 'shameful_song', 'shameful_tv_show', 'shameful_habit', 'shameful_story', 'shameful_pic')
+    success_url = reverse_lazy('home')
+    prepopulated_fields = {'slug': ('shamefull_nickname',)}
+
+    def form_valid(self, form):
+        form.instance.author = self.request.user
+        return super().form_valid(form)

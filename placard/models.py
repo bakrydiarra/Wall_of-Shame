@@ -2,6 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
 from django.urls import reverse
+from django.utils.text import slugify
 
 
 class Persona(models.Model):
@@ -53,12 +54,14 @@ class Persona(models.Model):
         """
         To render/get the absolute URL of specific object of the model
         """
-        return reverse('home')
+        return reverse('persona_detail', kwargs={'slug': self.slug})
 
     def save(self, *args, **Kwargs):
+
         """
-        To use slugify to preopulate shammefull_nickname input into a slug
+           To use slugify to preopulate shammefull_nickname input into a slug
         """
+
         if not self.slug:
             self.slug = slugify(self.shamefull_nickname)
         return super().save(*args, **Kwargs)
