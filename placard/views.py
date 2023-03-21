@@ -1,8 +1,15 @@
-from django.shortcuts import render, get_object_or_404, reverse
+from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.views import generic, View
 from django.http import HttpResponseRedirect
 from .models import *
 from .forms import CommentForm
+
+
+def get_landing_page(request):
+    if request.user.is_authenticated:
+        return render(request, 'index.html')
+    else:
+        return redirect('accounts/login')
 
 
 class PersonaList(generic.ListView):
