@@ -87,4 +87,4 @@ class PersonaLike(View):
 class CreatePersonaView(CreateView):
     model = Persona
     template_name = 'create_persona.html'
-    fields = ('shamefull_nickname', 'shameful_song', 'shameful_tv_show', 'shameful_habit','shameful_story', 'shameful_pic')
+    fields = ('shamefull_nickname', 'shameful_song', 'shameful_tv_show', 'shameful_habit', 'shameful_story', 'shameful_pic')
