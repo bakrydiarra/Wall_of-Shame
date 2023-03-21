@@ -53,7 +53,7 @@ class Persona(models.Model):
         """
         To render/get the absolute URL of specific object of the model
         """
-        return reverse('persona-details')
+        return reverse('home')
 
     def save(self, *args, **Kwargs):
         """
