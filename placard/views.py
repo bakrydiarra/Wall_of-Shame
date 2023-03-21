@@ -82,3 +82,9 @@ class PersonaLike(View):
             persona.likes.add(request.user)
 
         return HttpResponseRedirect(reverse('persona_detail', args=[slug]))
+
+
+class CreatePersonaView(CreateView):
+    model = Persona
+    template_name = 'create_persona.html'
+    fields = '__all__'
