@@ -47,7 +47,7 @@ Persona Detail
     {% if user.is_authenticated %}
     {% if user.id == persona.author.id %}
     <div class="card-body justify-content-center">
-      <a href="#" role="button" class="btn btn-success btn-block mx-2 btn-m "><strong>Edit</strong> </a>
+      <a href="{% url 'edit_persona' persona.slug %}" role="button" class="btn btn-success btn-block mx-2 btn-m "><strong>Edit</strong> </a>
       <a href="#" role="button" class="btn btn-success btn-block mx-2 btn-m "><strong>Delete</strong></a>
     </div>
     {% endif %}
