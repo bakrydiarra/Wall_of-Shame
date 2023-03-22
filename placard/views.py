@@ -142,4 +142,5 @@ class EditPersonaView(UpdateView):
 
     def form_valid(self, form):
         form.instance.author = self.request.user
+        messages.success(self.request, 'Persona created successfully!')
         return super().form_valid(form)

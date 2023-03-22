@@ -44,18 +44,27 @@ Persona Detail
       <span><i class="fa-solid fa-heart"></i> {{persona.number_of_likes}}</span>
       <span><i class="fa-solid fa-message"></i> {{persona.number_of_comments}}</span>
     </div>
+    {% if user.is_authenticated %}
+    {% if user.id == persona.author.id %}
+    <div class="card-body justify-content-center">
+      <a href="#" role="button" class="btn btn-success btn-block mx-2 btn-m "><strong>Edit</strong> </a>
+      <a href="#" role="button" class="btn btn-success btn-block mx-2 btn-m "><strong>Delete</strong></a>
+    </div>
+    {% endif %}
+    {% endif %}
   </div>
 </div>
 
 {% if user.is_authenticated %}
 <div class="mx-auto mtb-3 w-50">
-<form class="d-inline" action="{% url 'persona_like' persona.slug %}" method="post">
-  {% csrf_token %}
+  <form class="d-inline " action="{% url 'persona_like' persona.slug %}" method="post">
+    {% csrf_token %}
 
-  <button type="submit" name="blogpost_id" value="{{persona.slug}}" class="btn btn-success ">
-    {% if liked %} Unlike this Persona {% else %} Like this Persona {% endif %}
-  </button>
-</form>
+    <button type="submit" name="blogpost_id" value="{{persona.slug}}" class="btn btn-success ">
+      {% if liked %} Unlike {% else %} Like {% endif %}
+    </button>
+  </form>
+
 </div>
 {% endif %}
 
