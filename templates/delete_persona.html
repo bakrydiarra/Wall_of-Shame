@@ -11,13 +11,8 @@ Delete a Persona
     <div class="form-group">
         <form method="post">
             {% csrf_token %}
-
-            <p>Are you sure you want to delete "{{ persona.shamefull_nickname }}"?</p>
-            <a href="{% url 'delete-logs' post.slug %}">
-                <button class="btn btn-lg btn-danger delete-btn mt-5 mb-3">Delete</button>
-            </a>
-           
-            
+            <strong><p>Are you sure you want to delete "{{ persona.shamefull_nickname }}"?</p></strong>
+            <button class="btn btn-lg btn-danger delete-btn mt-5 mb-3">Delete</button>
         </form>
 
     </div>
