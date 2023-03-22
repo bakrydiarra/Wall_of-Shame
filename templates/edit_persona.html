@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}
+Edit a Persona
+{% endblock %}
+
+{% block content %}
+
+<div class="container p-2">
+    <h2 class="text-center mt-3">Edit your persona</h2>
+    <div class="form-group">
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.media }}
+            {{ form.as_p}}
+            {{persona.shameful_story | safe }}
+            <button type="submit" class="btn btn-success mb-3">Update</button>
+        </form>
+
+    </div>
+</div>
+
+
+{%endblock content%}

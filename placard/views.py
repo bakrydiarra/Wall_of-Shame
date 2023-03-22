@@ -1,4 +1,5 @@
 from django.shortcuts import render, get_object_or_404, reverse, redirect
+# from django.contrib.auth.decorators import login_required
 from django.urls import reverse_lazy
 from django.views import generic, View
 from django.views.generic import CreateView
@@ -8,11 +9,12 @@ from .models import *
 from .forms import *
 
 
+""" @login_required
 def get_landing_page(request):
     if request.user.is_authenticated:
         return render(request, 'index.html')
     else:
-        return redirect('accounts/login')
+        return redirect('accounts/login') """
 
 
 class PersonaList(generic.ListView):
