@@ -2,7 +2,7 @@ from django.shortcuts import render, get_object_or_404, reverse, redirect
 # from django.contrib.auth.decorators import login_required
 from django.urls import reverse_lazy
 from django.views import generic, View
-from django.views.generic import CreateView
+from django.views.generic import CreateView, UpdateView
 from django.http import HttpResponseRedirect
 from django.utils.text import slugify
 from .models import *
@@ -114,6 +114,23 @@ class CreatePersonaView(CreateView):
     to set the author field of the form instance
     to the current user before the form is saved.
     """
+
+    def form_valid(self, form):
+        form.instance.author = self.request.user
+        return super().form_valid(form)
+
+
+class EditPersonaView(UpdateView):
+    model = Persona
+    form_class = PersonaForm
+    template_name = 'edit_persona.html'
+    prepopulated_fields = {'slug': ('shamefull_nickname',)}
+    success_url = reverse_lazy('home')
+
+    def get_queryset(self):
+        queryset = super().get_queryset()
+        queryset = queryset.filter(author=self.request.user)
+        return queryset
 
     def form_valid(self, form):
         form.instance.author = self.request.user
