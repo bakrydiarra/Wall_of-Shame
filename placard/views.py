@@ -127,6 +127,12 @@ class EditPersonaView(UpdateView):
     prepopulated_fields = {'slug': ('shamefull_nickname',)}
     success_url = reverse_lazy('home')
 
+    """
+    to get the original queryset of all Persona objects
+    to filter onlyto include objects where the author
+    matches the currently logged in user
+    """
+
     def get_queryset(self):
         queryset = super().get_queryset()
         queryset = queryset.filter(author=self.request.user)
