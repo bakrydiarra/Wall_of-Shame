@@ -4,6 +4,7 @@ from django.urls import reverse_lazy
 from django.views import generic, View
 from django.views.generic import CreateView, UpdateView
 from django.http import HttpResponseRedirect
+from django.contrib import messages
 from django.utils.text import slugify
 from .models import *
 from .forms import *
@@ -117,6 +118,7 @@ class CreatePersonaView(CreateView):
 
     def form_valid(self, form):
         form.instance.author = self.request.user
+        messages.success(self.request, 'Persona created successfully!')
         return super().form_valid(form)
 
 
