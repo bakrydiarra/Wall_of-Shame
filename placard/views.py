@@ -97,6 +97,7 @@ class CreatePersonaView(CreateView):
     Class to add a Persona view to the list
     """
     model = Persona
+    # form_class to style the view
     form_class = PersonaForm
     template_name = 'create_persona.html'
     # fields = ('shamefull_nickname', 'shameful_song', 'shameful_tv_show', 'shameful_habit', 'shameful_story', 'shameful_pic')
