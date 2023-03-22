@@ -2,7 +2,7 @@ from django.shortcuts import render, get_object_or_404, reverse, redirect
 # from django.contrib.auth.decorators import login_required
 from django.urls import reverse_lazy
 from django.views import generic, View
-from django.views.generic import CreateView, UpdateView
+from django.views.generic import CreateView, UpdateView, DeleteView
 from django.http import HttpResponseRedirect
 from django.contrib import messages
 from django.utils.text import slugify
@@ -144,3 +144,8 @@ class EditPersonaView(UpdateView):
         form.instance.author = self.request.user
         messages.success(self.request, 'Persona updated successfully!')
         return super().form_valid(form)
+
+
+class DeletePersonaView(DeleteView):
+    model = Persona
+    template_name = 'delete_persona.html'

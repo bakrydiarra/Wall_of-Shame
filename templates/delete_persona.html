@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %}
+Delete a Persona
+{% endblock %}
+
+{% block content %}
+
+<div class="container p-2">
+    <h2 class="text-center mt-3">Delete your persona</h2>
+    <div class="form-group">
+        <form method="post">
+            {% csrf_token %}
+
+            <p>Are you sure you want to delete "{{ persona.shamefull_nickname }}"?</p>
+            <a href="{% url 'delete-logs' post.slug %}">
+                <button class="btn btn-lg btn-danger delete-btn mt-5 mb-3">Delete</button>
+            </a>
+           
+            
+        </form>
+
+    </div>
+</div>
+
+
+{%endblock content%}
