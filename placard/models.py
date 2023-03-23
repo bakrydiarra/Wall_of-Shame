@@ -91,7 +91,7 @@ class Comment(models.Model):
         To return a string representation of the comment -
         displaying comments in the Django admin interface
         """
-        return f'{self.user} commented persona {self.persona}'
+        return f'{self.author} commented persona {self.persona}'
 
 
 class Like(models.Model):
