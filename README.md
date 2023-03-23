@@ -22,6 +22,8 @@ Overview:
   * [Site Owner Goals](#site-owner-goals)
 
 * [User Experience](#user-experience-ux)
+  * [Target Audience](#target-audience)
+  * [User Requirements and Expectations](#user-requirements-ans-expectations)
   * [User Stories](#user-stories)
 
 * [Design](#design)
@@ -74,9 +76,25 @@ To have the ability to be given feedback via a contact form
 
 ## User Experience (UX)
 
-👩🏻‍💻 View an example of a completed user experience section [here](https://github.com/kera-cudmore/Bully-Book-Club#user-experience-ux)
+### Target Audience
+
+People who enjoy dark humor
+People who can laugh about themselves
+People who enjoy seeing the positive aspect (better laughing than crying) out of a shameful situation
+People who wish to share their story to encourage other people to overcome stigmatization of shame
+People who are looking for a way to interact with other people who dare to laugh about themselves
+
+### User Requirements ans Expectations
+
+A site which provides a good level of interactiveness between users
+Links and functions to act as expected
+Notification to provide feedback on expected function outcomes
+Simple content that a user can easily digest
+Responsiveness to allow pleasant use across devices of different screen sizes
+
 
 ### User Stories
+
 
  User Story ID | As a/an | I want to be able to... | So that I can... |
 | --- | ----------- | ----------- | ----------- |
@@ -114,6 +132,10 @@ To have the ability to be given feedback via a contact form
  | 25 | Site User | receive feedback when I interact with the site | I know if my actions are successfull | 
  | Search  | 
  | 26 | Site User | search for persona with some keywords | find a Persona which having corrXX | 
+
+---
+
+
 ## Design
 
 👩🏻‍💻 View an example of a completed design section [here](https://github.com/kera-cudmore/earth-day-hackathon-2022#Design)
