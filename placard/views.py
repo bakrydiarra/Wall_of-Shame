@@ -1,5 +1,6 @@
 from django.shortcuts import render, get_object_or_404, reverse, redirect
-# from django.contrib.auth.decorators import login_required
+from django.contrib.auth.decorators import login_required
+from django.utils.decorators import method_decorator
 from django.urls import reverse_lazy
 from django.views import generic, View
 from django.views.generic import CreateView, UpdateView, DeleteView
@@ -18,6 +19,17 @@ def get_landing_page(request):
         return redirect('accounts/login') """
 
 
+""" @login_required
+def index(request):
+    return render(request, 'index.html') """
+
+"""
+Reference for method decorator
+https://player.uacdn.net/lesson-raw/W8VMBBPXM7RQRAAUXHGY/pdf/4571659735.pdf
+"""
+
+
+@method_decorator(login_required, name='dispatch')
 class PersonaList(generic.ListView):
     """
     Class to show list of personas
@@ -150,4 +162,4 @@ class DeletePersonaView(DeleteView):
     model = Persona
     template_name = 'delete_persona.html'
     success_url = reverse_lazy('home')
-    
+
