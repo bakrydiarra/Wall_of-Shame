@@ -17,6 +17,10 @@ Overview:
 
 ## Table of CONTENTS
 
+* [Project Goals](#project-goals)
+  * [User Goals](#user-goals)
+  * [Site Owner Goals](#site-owner-goals)
+
 * [User Experience](#user-experience-ux)
   * [User Stories](#user-stories)
 
@@ -49,6 +53,24 @@ Overview:
   * [Acknowledgments](#acknowledgments)
 
 ---
+
+
+## Project Goals
+
+### User Goals
+
+To be able to share an  individual persona ( a blog post conceived as a glimpse of our many outrageous identities) on the website. 
+To be able to comment and like on other users’ personas.
+To be able to use CRUD functionality whilst logged onto the site
+
+### Site Owner Goals
+
+To provide a platform in which users can share persona
+To provide an enjoyable user experience which would make users wish to return to the site
+To have the ability to be given feedback via a contact form
+
+---
+
 
 ## User Experience (UX)
 
