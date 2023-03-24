@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% load crispy_forms_tags %}
+
 
 {% block title %}
 Contact us
@@ -14,7 +14,8 @@ Contact us
         <form method="post" enctype="multipart/form-data">
             {% csrf_token %}
             
-            {{ enquiry_form | crispy }}
+            {{ form.as_p}}
+            {{ contact.message | safe }}
             <button type="submit" class="btn btn-success mb-3">Post</button>
         </form>
 
