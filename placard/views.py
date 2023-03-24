@@ -7,6 +7,7 @@ from django.views.generic import CreateView, UpdateView, DeleteView
 from django.http import HttpResponseRedirect
 from django.contrib import messages
 from django.utils.text import slugify
+from django.db.models import Q
 from .models import *
 from .forms import *
 
@@ -162,4 +163,19 @@ class DeletePersonaView(DeleteView):
     model = Persona
     template_name = 'delete_persona.html'
     success_url = reverse_lazy('home')
+
+
+def PersonaSearch(request):
+    """
+    To search with keywords a persona
+    """
+    q = request.Get.get('q')
+
+    results = []
+    if q:
+        results = Post.objects.filter(Q(shamefull_nickname__icontains=q) | Q(shameful_song__icontains=q) | Q(shameful_tv_show__icontains=q) | Q(shameful_habit__icontains=q) | Q(shameful_story__icontains=q))
+        return render(request, 'search.html', {
+            'q': q, 'results': results
+            })
+
 
