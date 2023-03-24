@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% load crispy_forms_tags %}
+
+{% block title %}
+Contact us
+{% endblock %}
+
+{% block content %}
+
+<div class="container form-style">
+    <h2 class="text-center mt-3">Contact us</h2>
+    <div class="form-group">
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            
+            {{ enquiry_form | crispy }}
+            <button type="submit" class="btn btn-success mb-3">Post</button>
+        </form>
+
+    </div>
+</div>
+
+
+{%endblock content%}
