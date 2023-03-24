@@ -8,7 +8,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <form class="d-flex" role="search">
+            <form class="d-flex" role="search" action="{% url 'search' %}" method="get">
                 <input name="q" class="form-control me-2" type="search" placeholder="Type your keyword" aria-label="Search">
                 {% csrf_token %}
                 <button class="btn btn-outline-success" type="submit">Search</button>
