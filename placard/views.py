@@ -177,5 +177,3 @@ def PersonaSearch(request):
         return render(request, 'search.html', {
             'q': q, 'results': results
             })
-
-
