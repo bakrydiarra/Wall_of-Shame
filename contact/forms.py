@@ -9,8 +9,10 @@ class EnquiryForm(forms.ModelForm):
     """
 
     class Meta:
+        # Get a contact form model and choose which fields to display
         model = ContactForm
         fields = ('reason', 'name', 'email', 'message')
+        # widgets to design input fields
 
         widgets = {
             'reason': forms.Select(attrs={
