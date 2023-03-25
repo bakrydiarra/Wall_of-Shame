@@ -2,14 +2,24 @@
 
     <div class="container-fluid">
         {% if user.is_authenticated %}
+
+        <!-- Wall of Shame logo -->
+
         <a class="navbar-brand" href="{% url 'home' %}">WoS</a>
+
+        <!-- Menu toggle for mobile screens -->
+
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+
+        <!-- Show username and logout link and seach form if authenticated -->
+
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <form class="d-flex" role="search" action="{% url 'search' %}" method="get">
-                <input name="q" class="form-control me-2" type="search" placeholder="Type your keyword" aria-label="Search">
+                <input name="q" class="form-control me-2" type="search" placeholder="Type your keyword"
+                    aria-label="Search">
                 {% csrf_token %}
                 <button class="btn btn-outline-success" type="submit">Search</button>
             </form>
@@ -39,6 +49,8 @@
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success" type="submit">Search</button>
             </form>
+            <!-- Show register and Sing in link if not‚ authenticated -->
+
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'account_signup' %}">Register</a>

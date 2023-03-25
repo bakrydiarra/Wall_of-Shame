@@ -36,7 +36,7 @@ Persona Detail
       </li>
     </ul>
     <div class="card-body">
-      <h5>The story that I have never told but woths a laugh</h5>
+      <h5>The story that I have never told but worthes a laugh</h5>
       <p class="card-text">{{persona.shameful_story | safe }}</p>
     </div>
     <div class="card-body d-flex justify-content-between small text-secondary">
@@ -44,6 +44,7 @@ Persona Detail
       <span><i class="fa-solid fa-heart"></i> {{persona.number_of_likes}}</span>
       <span><i class="fa-solid fa-message"></i> {{persona.number_of_comments}}</span>
     </div>
+    <!-- Show button delete and and edit if authenticated and author from the persona -->
     {% if user.is_authenticated %}
     {% if user.id == persona.author.id %}
     <div class="card-body justify-content-center">
@@ -56,7 +57,7 @@ Persona Detail
     {% endif %}
   </div>
 </div>
-
+<!-- Show btn like or unlike it depends which one was already clicked -->
 {% if user.is_authenticated %}
 <div class="mx-auto mtb-3 w-50">
   <form class="d-inline " action="{% url 'persona_like' persona.slug %}" method="post">
@@ -71,7 +72,7 @@ Persona Detail
 </div>
 {% endif %}
 
-
+<!-- Show the number of comments -->
 
 <h3 class="my-5 text-center">
   {% if persona.number_of_comments > 0 %}
@@ -98,7 +99,7 @@ Persona Detail
 </div>
 
 {%endif%}
-
+<!-- Show comments fomr oldest to newest -->
 {% for comment in comments %}
 <div class="card mx-auto my-3 w-50">
 

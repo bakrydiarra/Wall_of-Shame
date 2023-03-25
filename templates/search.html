@@ -7,7 +7,7 @@ Search Resultts
 <div class="container-fluid">
     <div class="row">
 
-        <!-- Blog Entries Column -->
+        <!-- Blog persona Entries Column results -->
         <div class="col-12 mt-3 mx-auto ">
             <div class="row">
                 {% if q %}
@@ -78,6 +78,8 @@ Search Resultts
     <a href="{% url 'create_persona' %}" role="button" class="btn btn-success mb-3 btn-floating btn-lg"
         id="btn-back-to-top">Create a Post</a>
 </div>
+
+<!-- Show pagination prev and next when the page reaches 6 personas -->
 
 {% if is_paginated %}
 <nav aria-label="Page navigation">

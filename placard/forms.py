@@ -15,11 +15,11 @@ class CommentForm(forms.ModelForm):
 
 class PersonaForm(forms.ModelForm):
     """
-    Django form to add lab log posts
+    Form to add a new persona
     """
 
     class Meta:
-        # Get post model and choose which fields to display
+        # Get persona model and choose which fields to display
         model = Persona
         fields = ('shamefull_nickname', 'shameful_song', 'shameful_tv_show', 'shameful_habit', 'shameful_story', 'shameful_pic')
         # widgets to design input fields

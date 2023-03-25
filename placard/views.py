@@ -12,18 +12,6 @@ from .models import *
 from .forms import *
 
 
-""" @login_required
-def get_landing_page(request):
-    if request.user.is_authenticated:
-        return render(request, 'index.html')
-    else:
-        return redirect('accounts/login') """
-
-
-""" @login_required
-def index(request):
-    return render(request, 'index.html') """
-
 """
 Reference for method decorator
 https://player.uacdn.net/lesson-raw/W8VMBBPXM7RQRAAUXHGY/pdf/4571659735.pdf
@@ -116,7 +104,6 @@ class CreatePersonaView(CreateView):
     # form_class to style the view
     form_class = PersonaForm
     template_name = 'create_persona.html'
-    # fields = ('shamefull_nickname', 'shameful_song', 'shameful_tv_show', 'shameful_habit', 'shameful_story', 'shameful_pic')
     success_url = reverse_lazy('home')
     """
     to make sure that the shamefull_nickname entry
