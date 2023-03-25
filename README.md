@@ -13,6 +13,13 @@ Overview:
 
 [View the live project here.]
 
+## Site info
+
+ - Wall of shame is an application which encourages people to share their shameful experiences or shameful information about them in order to overcome the burden of feeling ashamed of something 
+and the stigmatization which comes with it . 
+A choice to laugh about things that we’re usually avoiding to tell. A place to  discover other shameless fellows whos embarrass one ethos: 
+Better than laugh than cry.
+
 ---
 
 ## Table of CONTENTS
