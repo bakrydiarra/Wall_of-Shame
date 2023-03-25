@@ -13,6 +13,8 @@ Overview:
 
 [View the live project here.]
 
+---
+
 ## Site info
 
  - Wall of shame is an application which encourages people to share their shameful experiences or shameful information about them in order to overcome the burden of feeling ashamed of something 
@@ -248,6 +250,15 @@ Code Institute have an amazing channel for all things accessibility (a11y-access
 ### Other Tools
 
 - [Balsamiq](https://balsamiq.com/) - Used to create Wireframes for the project.
+- [mycolor](https://mycolor.space/) - for creating harmonious colors.
+- [Responsinator](http://www.responsinator.com/) - test responsive website.
+- [W3 Schools](https://www.w3schools.com/) - for HTML, CSS, Django tips. 
+- [LearnDjango](https://learndjango.com/) - for understanding the logic of Django
+- [Django Docummentation](https://docs.djangoproject.com/en/3.2/) - to research and learn specific utilisation of Django framework
+- [readme-examples](https://github.com/kera-cudmore/readme-examples/blob/main/milestone1-readme.md#testing) -for creating the core strucutre of my README.md
+
+---
+
 
 ## Deployment 
 
@@ -406,6 +417,7 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 
 7. Press Enter. Your local clone will be created.
 
+---
 
 
 ## Testing
