@@ -10,20 +10,26 @@ Sign in
 
 {% block content %}
 
-<h1>{% trans "Sign In" %}</h1>
+<h1 class="text-center my-5">Welcome shameless fellow!</h1>
+
+<div class="mx-auto mtb-3 w-50 justify-content-center align-items-center vh-90">
+  <p class="mt-4 mb-5">The Wall of Shame is a place to reveal our many shameful faces to laugh about ourselves and enjoy other's shameless portraits.</p>
 
 
-<p>{% blocktrans %}If you have not created an account yet, then please
-<a href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}</p>
-
-
-<form class="login" method="POST" action="{% url 'account_login' %}">
-  {% csrf_token %}
-  {{ form.as_p }}
-  {% if redirect_field_value %}
-  <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
-  {% endif %}
-  <button class="primaryAction" type="submit">{% trans "Sign In" %}</button>
-</form>
-
+  <form class="login" method="POST" action="{% url 'account_login' %}">
+    {% csrf_token %}
+    {{ form|crispy }}
+    {% if redirect_field_value %}
+    <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+    {% endif %}
+    <div class="d-flex justify-content-center">
+      <button class="btn btn-success mt-4 btn-floating btn-lg" type="submit">{% trans "Sign In" %}</button>
+    </div>
+  </form>
+  <h2 class="text-center my-5">Not a menber yet?</h2>
+  <div class="d-flex justify-content-center">
+    <a href="{% url 'account_signup' %}" role="button" class="btn btn-success mb-3 btn-floating btn-lg"
+        id="btn-back-to-top">Sign up</a>
+  </div>
+</div>
 {% endblock %}
