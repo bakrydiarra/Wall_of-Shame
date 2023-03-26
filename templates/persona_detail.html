@@ -10,8 +10,8 @@ Persona Detail
 
 {% block content %}
 
-<div>
-  <div class="card mx-auto mt-3 w-50">
+
+  <div class="card mx-auto mt-5 w-50">
     {% if "placeholder" in persona.shameful_pic.url %}
     <img src="https://codeinstitute.s3.amazonaws.com/fullstack/blog/default.jpg" class="card-img-top" alt="...">
     {% else %}
@@ -39,10 +39,12 @@ Persona Detail
       <h5>The story that I have never told but worthes a laugh</h5>
       <p class="card-text">{{persona.shameful_story | safe }}</p>
     </div>
-    <div class="card-body d-flex justify-content-between small text-secondary">
+    <div class="d-flex flex-column flex-lg-row justify-content-between small text-secondary card-text mt-3">
       <span>{{persona.created_on}}</span>
+      <div>
       <span><i class="fa-solid fa-heart"></i> {{persona.number_of_likes}}</span>
       <span><i class="fa-solid fa-message"></i> {{persona.number_of_comments}}</span>
+    </div>
     </div>
     <!-- Show button delete and and edit if authenticated and author from the persona -->
     {% if user.is_authenticated %}
@@ -56,7 +58,7 @@ Persona Detail
     {% endif %}
     {% endif %}
   </div>
-</div>
+
 <!-- Show btn like or unlike it depends which one was already clicked -->
 {% if user.is_authenticated %}
 <div class="mx-auto mtb-3 w-50">
