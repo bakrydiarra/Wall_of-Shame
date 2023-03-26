@@ -10,9 +10,11 @@ Sign in
 
 {% block content %}
 
-<h1 class="text-center my-5">Welcome shameless fellow!</h1>
 
-<div class="mx-auto mtb-3 w-50 justify-content-center align-items-center" style="height: 75vh;">
+
+<div class="mx-auto w-50 justify-content-center align-items-center" style="height: 75vh;">
+
+  <h1 class="text-center my-5">Welcome shameless fellow!</h1>
   <p class="mt-4 mb-5">The Wall of Shame is a place to reveal our many shameful faces to laugh about ourselves and enjoy other's shameless portraits.</p>
 
 
@@ -29,7 +31,7 @@ Sign in
   <h2 class="text-center my-5">Not a menber yet?</h2>
   <div class="d-flex justify-content-center">
     <a href="{% url 'account_signup' %}" role="button" class="btn btn-success mb-3 btn-lg"
-        id="btn-back-to-top">Sign up</a>
+        >Sign up</a>
   </div>
 </div>
 {% endblock %}
