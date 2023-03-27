@@ -54,3 +54,11 @@ p, input, label {
 .persona-link:hover {
     color: red;
 }
+
+.fa-linkedin-in:hover {
+    color: red;
+}
+
+.fa-github:hover {
+    color: red;
+}
