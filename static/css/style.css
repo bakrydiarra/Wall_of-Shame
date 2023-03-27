@@ -12,3 +12,36 @@
 body {
     background-color: #FEFAE8;
 }
+
+h1, h2, h3 {
+    font-family: Nunito, sans-serif;
+}
+
+p, input, label {
+    font-family: Roboto, sans-serif;
+}
+
+.btn {
+    font-family: Roboto, sans-serif;
+}
+
+.navbar-brand {
+    font-family: Comforter, sans-serif;
+    font-size: 24px;
+    font-weight: 900;
+    color: white;
+}
+
+.navbar-brand:hover {
+    color: red;
+}
+
+.nav-link {
+    font-family: Roboto, sans-serif;
+    color: white;
+
+}
+
+.nav-link:hover {
+    color: red;
+}
