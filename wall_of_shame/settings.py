@@ -173,16 +173,15 @@ SUMMERNOTE_CONFIG = {
 
     'summernote': {
 
-        """
-        Toolbar customization
-        Editor size configuration
-        to make it responsive
-
-        """
-
+        # Editor size configuration to make it responisve
         'width': '100%',
         'height': '300',
+
+        # Use proper language setting automatically (default)
         'lang': None,
+
+        # Toolbar customization
+
         'toolbar': [
             ['style', ['style']],
             ['font', ['bold', 'underline', 'clear']],

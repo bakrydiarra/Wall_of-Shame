@@ -45,3 +45,12 @@ p, input, label {
 .nav-link:hover {
     color: red;
 }
+
+.persona-link {
+    text-decoration: none;
+    color: #6F8E8B;
+}
+
+.persona-link:hover {
+    color: red;
+}
