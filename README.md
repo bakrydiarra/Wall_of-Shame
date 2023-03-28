@@ -158,6 +158,15 @@ Responsiveness to allow pleasant use across devices of different screen sizes
 After I finished the issue by fulfilling all the acceptance criteria and the  tasks attached to them, I closed the issue which moved it automatically into the "Done" Column.
 The issues that I couldn’t tackle from the "Todo" column ended in the “Won’t do” column.
 
+<details>
+<summary>Issue Samples</summary>
+<img src="docs/agile/dashboard_wall_of_shame.png">
+<img src="docs/agile/issue_1.png">
+<img src="docs/agile/issue_2.png">
+<img src="docs/agile/issue_3.png">
+<img src="docs/agile/issue_4.png">
+</details>
+
 
 ### CRUD Functionality
 
