@@ -152,6 +152,13 @@ Responsiveness to allow pleasant use across devices of different screen sizes
 
 ### Agile Methodology
 
+- Throughout this project, an agile approach has been applied in order to develop the website. Each activity was broken down into manageable actions from initially  10 milestones, which were then broken down into smaller units : issues. Each issue was labeled to identify their main topics and represent a user story. 
+- Each user story  had different acceptance criteria and series of tasks. GitHub's project was used to track these user stories, implement ideas, and monitor the workflow. Indeed, the kanban board allowed the workflow to focus first on the essential features, work in small iteration, adding extra features in case the time allowed it.
+- When I was working on the project, I chose one issue to work on from the "Todo" column of the Dashboard Wall of Shame and moved it into the "In Progress" column.
+After I finished the issue by fulfilling all the acceptance criteria and the  tasks attached to them, I closed the issue which moved it automatically into the "Done" Column.
+The issues that I couldn’t tackle from the "Todo" column ended in the “Won’t do” column.
+
+
 ### CRUD Functionality
 
 ### Database Model
