@@ -7,7 +7,7 @@
     margin: 0;
 }
 
-/*--------------------------------------------Colors*/
+/*--------------------------------------------general*/
 
 body {
     background-color: #FEFAE8;
@@ -24,6 +24,8 @@ p, input, label {
 .btn {
     font-family: Roboto, sans-serif;
 }
+
+/*--------------------------------------------header*/
 
 .navbar-brand {
     font-family: Comforter, sans-serif;
@@ -51,9 +53,13 @@ p, input, label {
     color: #6F8E8B;
 }
 
+/*--------------------------------------------link persona_detail*/
+
 .persona-link:hover {
     color: red;
 }
+
+/*--------------------------------------------social media*/
 
 .fa-linkedin-in:hover {
     color: red;
@@ -62,6 +68,8 @@ p, input, label {
 .fa-github:hover {
     color: red;
 }
+
+/*--------------------------------------------Persona_details fields*/
 
 .card-title {
     font-family: Comforter, sans-serif;
