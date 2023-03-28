@@ -69,6 +69,12 @@ p, input, label {
     color: red;
 }
 
+/*--------------------------------------------pagination*/
+
+.page-link:hover {
+    color: red;
+}
+
 /*--------------------------------------------Persona_details fields*/
 
 .card-title {
