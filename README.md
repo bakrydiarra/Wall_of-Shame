@@ -35,7 +35,10 @@ Better than laugh than cry.
   * [User Requirements and Expectations](#user-requirements-ans-expectations)
   * [User Stories](#user-stories)
 
-* [Design](#design)
+* [Technical Design](#technical-design)
+  * [Agile Methodology](#agile-methodology)
+  * [CRUD Functionality](#crud-functionality)
+  * [Database Model](#database-model)
   * [Colour Scheme](#colour-scheme)
   * [Typography](#typography)
   * [Imagery](#imagery)
@@ -145,9 +148,13 @@ Responsiveness to allow pleasant use across devices of different screen sizes
 ---
 
 
-## Design
+## Technical Design
 
-👩🏻‍💻 View an example of a completed design section [here](https://github.com/kera-cudmore/earth-day-hackathon-2022#Design)
+### Agile Methodology
+
+### CRUD Functionality
+
+### Database Model
 
 ### Colour Scheme
 
