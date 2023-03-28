@@ -51,9 +51,9 @@ Persona Detail
     {% if user.id == persona.author.id %}
     <div class="card-body justify-content-center">
       <a href="{% url 'edit_persona' persona.slug %}" role="button"
-        class="btn btn-success btn-block mx-2 btn-m mt-2"><strong>Edit</strong> </a>
+        class="btn btn-outline-success btn-block mx-2 btn-m mt-2"><strong>Edit</strong> </a>
       <a href="{% url 'delete_persona' persona.slug %}" role="button"
-        class="btn btn-success btn-block mx-2 btn-m mt-2"><strong>Delete</strong></a>
+        class="btn btn-outline-success btn-block mx-2 btn-m mt-2"><strong>Delete</strong></a>
     </div>
     {% endif %}
     {% endif %}
@@ -65,7 +65,7 @@ Persona Detail
   <form class="d-inline " action="{% url 'persona_like' persona.slug %}" method="post">
     {% csrf_token %}
     <div class="form-group d-flex justify-content-center mt-3">
-      <button type="submit" name="blogpost_id" value="{{persona.slug}}" class="btn btn-success ">
+      <button type="submit" name="blogpost_id" value="{{persona.slug}}" class="btn btn-outline-success ">
         {% if liked %} Unlike {% else %} Like {% endif %}
       </button>
     </div>
@@ -95,7 +95,7 @@ Persona Detail
     <form method="post">
       {% csrf_token %}
       {{ comment_form | crispy}}
-      <button type="submit" class="btn btn-success btn-m">Post Comment</button>
+      <button type="submit" class="btn btn-outline-success btn-m">Post Comment</button>
     </form>
   </div>
 </div>
