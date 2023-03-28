@@ -51,9 +51,9 @@ Persona Detail
     {% if user.id == persona.author.id %}
     <div class="card-body justify-content-center">
       <a href="{% url 'edit_persona' persona.slug %}" role="button"
-        class="btn btn-success btn-block mx-2 btn-m "><strong>Edit</strong> </a>
+        class="btn btn-success btn-block mx-2 btn-m mt-2"><strong>Edit</strong> </a>
       <a href="{% url 'delete_persona' persona.slug %}" role="button"
-        class="btn btn-success btn-block mx-2 btn-m "><strong>Delete</strong></a>
+        class="btn btn-success btn-block mx-2 btn-m mt-2"><strong>Delete</strong></a>
     </div>
     {% endif %}
     {% endif %}
@@ -95,7 +95,7 @@ Persona Detail
     <form method="post">
       {% csrf_token %}
       {{ comment_form | crispy}}
-      <button type="submit" class="btn btn-success ">Post Comment</button>
+      <button type="submit" class="btn btn-success btn-m">Post Comment</button>
     </form>
   </div>
 </div>
