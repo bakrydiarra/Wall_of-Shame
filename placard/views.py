@@ -121,6 +121,11 @@ class CreatePersonaView(CreateView):
         messages.success(self.request, 'Persona created successfully!')
         return super().form_valid(form)
 
+    def form_invalid(self, form):
+        response = super().form_invalid(form)
+        messages.error(self.request, 'Please fill up all fields.')
+        return response
+
 
 class EditPersonaView(UpdateView):
     model = Persona
@@ -144,6 +149,11 @@ class EditPersonaView(UpdateView):
         form.instance.author = self.request.user
         messages.success(self.request, 'Persona updated successfully!')
         return super().form_valid(form)
+
+    def form_invalid(self, form):
+        response = super().form_invalid(form)
+        messages.error(self.request, 'Please fill up all fields.')
+        return response
 
 
 class DeletePersonaView(DeleteView):
