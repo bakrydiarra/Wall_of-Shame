@@ -62,3 +62,15 @@ p, input, label {
 .fa-github:hover {
     color: red;
 }
+
+.card-title {
+    font-family: Comforter, sans-serif;
+}
+
+.card-text {
+    font-family: Roboto, sans-serif;
+}
+
+.field-title {
+    font-family: Nunito, sans-serif;
+}
