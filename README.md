@@ -40,13 +40,11 @@ Better than laugh than cry.
   * [Database Model](#database-model)
   * [Colour Scheme](#colour-scheme)
   * [Typography](#typography)
-  * [Imagery](#imagery)
   * [Wireframes](#wireframes)
 
 * [Features](#features)
-  * [General Features on Each Page](#general-features-on-each-page)
   * [Future Implementations](#future-implementations)
-  * [Accessibility](#accessibility)
+ 
 
 * [Technologies Used](#technologies-used)
   * [Languages Used](#languages-used)
@@ -275,17 +273,26 @@ The Contact Class represents a contact message from the user to the admin in ord
 
 ## Features
 
-👩🏻‍💻
+### Authentication
 
-### General features on each page
+Authentication is a feature of the Wall of Shame site, users will have to be authenticated whilst attempting to log in or else they will not be able to use any functionality of the site or view any information that WoS users have posted.
 
+<details>
+<summary>Authentication image</summary>
+<img src="">
+</details>
 
+### Create Persona
+
+The create persona feature can be found from the home page through the button "Create a Persona".
+
+details>
+<summary>Create Persona image</summary>
+<img src="">
+</details>
 
 ### Future Implementations
 
-
-
-### Accessibility
 
 
 
