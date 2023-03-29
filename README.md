@@ -266,10 +266,7 @@ The Contact Class represents a contact message from the user to the admin in ord
 
 ### Typography
 
-
-
-### Imagery
-
+ - Fonts were imported using Google Fonts. Roboto, Nunito and Comforter were used throughout with a backup of sans-serif.
 
 
 ### Wireframes
