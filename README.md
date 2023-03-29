@@ -170,6 +170,12 @@ The issues that I couldn’t tackle from the "Todo" column ended in the “Won�
 
 ### CRUD Functionality
 
+ #### Persona
+
+ | Create | Read | Update | Delete |
+ | ------------- | ------------- | -------------    | ------------- |
+ |  Yes  | Yes  | Yes | Yes |
+
 ### Database Model
 
 ### Colour Scheme
