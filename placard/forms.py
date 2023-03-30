@@ -21,7 +21,10 @@ class PersonaForm(forms.ModelForm):
     class Meta:
         # Get persona model and choose which fields to display
         model = Persona
-        fields = ('shamefull_nickname', 'shameful_song', 'shameful_tv_show', 'shameful_habit', 'shameful_story', 'shameful_pic')
+        fields = (
+            'shamefull_nickname', 'shameful_song',
+            'shameful_tv_show', 'shameful_habit',
+            'shameful_story', 'shameful_pic')
         # widgets to design input fields
 
         widgets = {
