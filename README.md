@@ -469,7 +469,7 @@ web: gunicorn wall_of_shame.wsgi
 3. In your app Settings, add the config var DATABASE_URL, and for the value, paste in your database url from ElephantSQL.
 4. In your app Settings, add the config var DJANGO_SECRET_KEY. Generate a DJANGO_SECRET_KEY and paste it in. Keep this secret.
 5. Connect Heroku to github repository
-6. Deploy from branch manually (before final deployment: the debug setting in settings.py was set to false for security and  the DISABLE_COLLECTSTATIC config var in Heroku has to be removed)
+6. Deploy from branch manually (before final deployment: the debug setting in settings.py was set to false for security, X_FRAME_OPTIONS = 'SAMEORIGIN' was added and  the DISABLE_COLLECTSTATIC config var in Heroku has to be removed)
 
 ```
 # SECURITY WARNING: don't run with debug turned on in production!
