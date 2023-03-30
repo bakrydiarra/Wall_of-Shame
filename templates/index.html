@@ -20,9 +20,9 @@ Home
                             <div class="image-container">
                                 {% if "placeholder" in persona.shameful_pic.url %}
                                 <img class="card-img-top"
-                                    src="https://codeinstitute.s3.amazonaws.com/fullstack/blog/default.jpg">
+                                    src="https://codeinstitute.s3.amazonaws.com/fullstack/blog/default.jpg" alt="...">
                                 {% else %}
-                                <img class="card-img-top" src="{{ persona.shameful_pic.url }}">
+                                <img class="card-img-top" src="{{ persona.shameful_pic.url }}" alt="...">
                                 {% endif %}
 
                             </div>

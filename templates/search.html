@@ -21,9 +21,9 @@ Search Resultts
                             <div class="image-container">
                                 {% if "placeholder" in persona.shameful_pic.url %}
                                 <img class="card-img-top"
-                                    src="https://codeinstitute.s3.amazonaws.com/fullstack/blog/default.jpg">
+                                    src="https://codeinstitute.s3.amazonaws.com/fullstack/blog/default.jpg" alt="...">
                                 {% else %}
-                                <img class="card-img-top" src="{{ persona.shameful_pic.url }}">
+                                <img class="card-img-top" src="{{ persona.shameful_pic.url }}" alt="...">
                                 {% endif %}
 
                             </div>
@@ -52,16 +52,17 @@ Search Resultts
             <div class="row">
                 {% endif %}
 
-
-
             </div>
         </div>
         {% empty %}
 
-        <div class="container text-center mt-4">
+
+        <div class="mx-auto mt-5 w-50 justify-content-center align-items-center" style="height: 82vh;">
             <div class="text-dark">
                 <h1>There was no matching results found. <br> Please try another keyword..
                 </h1>
+                <a href="{% url 'home' %}" role="button"
+                    class="btn btn-outline-success btn-block mt-5 mx-2 btn-m "><strong>Back Home</strong> </a>
             </div>
         </div>
         {% endfor %}

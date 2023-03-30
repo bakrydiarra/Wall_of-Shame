@@ -37,7 +37,5 @@ class PersonaForm(forms.ModelForm):
             'shameful_habit': forms.TextInput(attrs={
                 'class': 'form-control',
                 'placeholder': 'Share a outrageous habit you have'}),
-            'shameful_story': SummernoteWidget(attrs={
-                'class': 'form-control',
-                'placeholder': 'Share a pitiful story you survived'}),
+            'shameful_story': SummernoteWidget,
         }

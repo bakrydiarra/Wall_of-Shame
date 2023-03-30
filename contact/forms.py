@@ -16,8 +16,7 @@ class EnquiryForm(forms.ModelForm):
 
         widgets = {
             'reason': forms.Select(attrs={
-                'class': 'form-control',
-                'placeholder': 'Select your reason'
+                'class': 'form-control'
             }),
             'name': forms.TextInput(attrs={
                 'class': 'form-control',
@@ -27,8 +26,5 @@ class EnquiryForm(forms.ModelForm):
                 'class': 'form-control',
                 'placeholder': 'Give your email here'
             }),
-            'message': SummernoteWidget(attrs={
-                'class': 'form-control',
-                'placeholder': 'Leave youe message here'
-            }),
+            'message': SummernoteWidget,
         }

@@ -15,7 +15,7 @@ Persona Detail
     {% if "placeholder" in persona.shameful_pic.url %}
     <img src="https://codeinstitute.s3.amazonaws.com/fullstack/blog/default.jpg" class="card-img-top" alt="...">
     {% else %}
-    <img class="card-img-top" src="{{ persona.shameful_pic.url }}">
+    <img class="card-img-top" src="{{ persona.shameful_pic.url }}" alt="...">
     {% endif %}
     <div class="card-body">
       <h3 class="card-title text-center text-uppercase">{{persona.shamefull_nickname | safe }}</h3>
