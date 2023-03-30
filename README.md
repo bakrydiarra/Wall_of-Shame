@@ -282,6 +282,26 @@ Authentication is a feature of the Wall of Shame site, users will have to be aut
 <img src="">
 </details>
 
+### Sign up
+
+The register feature can be found bevor the log in page. This feature allows users to register and create an account with persona via a form and keep privacy of the WoS community. XXXXX
+
+<details>
+<summary>Sign up image</summary>
+<img src="readme/features/register.png">
+</details>
+
+
+### Home Page
+
+The home page is accessible when the user is registered/Logged in. The page displays the list of personas.
+
+<details>
+<summary>Home page image</summary>
+<img src="">
+</details>
+
+
 ### Create Persona
 
 The create persona feature can be found from the home page through the button "Create a Persona".
@@ -290,6 +310,40 @@ details>
 <summary>Create Persona image</summary>
 <img src="">
 </details>
+
+
+### Post Comment
+
+The post comment feature can be accessed from any user's persona detail page, below the persona is a form to enter a comment. The comment will then be posted under the persona.
+
+<details>
+<summary>Persona comment image</summary>
+<img src="">
+</details>
+
+
+### Like count 
+
+The like count feature can be found at the bottom of a persona. The total number of likes on the current persona will be displayed.
+
+<details>
+<summary>Like count image</summary>
+<img src="">
+<img src="">
+</details>
+
+
+### Comment count
+
+The comment count feature can be found at the bottom of a persona. The total number of likes on the current persona will be displayed.
+
+<details>
+<summary>Comment count image</summary>
+<img src="">
+<img src="">
+</details>
+
+
 
 ### Future Implementations
 
