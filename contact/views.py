@@ -19,7 +19,9 @@ class CreateContactView(CreateView):
 
     def form_valid(self, form):
         response = super().form_valid(form)
-        messages.success(self.request, 'Your message has been sent successfully!')
+        messages.success(
+            self.request,
+            'Your message has been sent successfully!')
         return response
 
     def form_invalid(self, form):
