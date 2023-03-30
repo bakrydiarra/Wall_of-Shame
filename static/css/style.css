@@ -88,3 +88,43 @@ p, input, label {
 .field-title {
     font-family: Nunito, sans-serif;
 }
+
+.adjust {
+    height: 82vh;
+}
+
+@media (max-height: 1030px) {
+    .adjust {
+        height: auto;
+    }
+}
+
+.adjust_contact {
+    height: 84vh;
+}
+
+@media (max-height: 1030px) {
+    .adjust_contact {
+        height: auto;
+    }
+}
+
+.adjust_create {
+    height: 85vh;
+}
+
+@media (max-height: 1030px) {
+    .adjust_create {
+        height: auto;
+    }
+}
+
+.adjust_edit {
+    height: 85vh;
+}
+
+@media (max-height: 1030px) {
+    .adjust_edit {
+        height: auto;
+    }
+}
