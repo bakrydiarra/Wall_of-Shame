@@ -85,6 +85,10 @@ class PersonaDetail(View):
 
 class PersonaLike(View):
 
+    """
+    Class to add a like
+    """
+
     def post(self, request, slug):
         persona = get_object_or_404(Persona, slug=slug)
 
@@ -128,6 +132,11 @@ class CreatePersonaView(CreateView):
 
 
 class EditPersonaView(UpdateView):
+
+    """
+    Class to edit a persona
+    """
+
     model = Persona
     form_class = PersonaForm
     template_name = 'edit_persona.html'
@@ -157,6 +166,10 @@ class EditPersonaView(UpdateView):
 
 
 class DeletePersonaView(DeleteView):
+    """
+    Class to delete a Persona
+    """
+
     model = Persona
     template_name = 'delete_persona.html'
     success_url = reverse_lazy('home')
@@ -164,7 +177,7 @@ class DeletePersonaView(DeleteView):
 
 def PersonaSearch(request):
     """
-    To search with keywords a persona
+    Class o search with keywords a persona
     """
     q = request.GET.get('q')
 

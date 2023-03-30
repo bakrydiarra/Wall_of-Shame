@@ -8,6 +8,10 @@ from .forms import *
 
 class CreateContactView(CreateView):
 
+    """
+    class to show a contact form
+    """
+
     model = ContactForm
     form_class = EnquiryForm
     template_name = 'contact.html'

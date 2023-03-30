@@ -5,7 +5,7 @@ from django_summernote.widgets import SummernoteWidget
 
 class CommentForm(forms.ModelForm):
     """
-    From to write comments
+    Form to write comments
     """
 
     class Meta:

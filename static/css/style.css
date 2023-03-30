@@ -89,6 +89,8 @@ p, input, label {
     font-family: Nunito, sans-serif;
 }
 
+/*--------------------------------------------Viewports*/
+
 .adjust {
     height: 82vh;
 }

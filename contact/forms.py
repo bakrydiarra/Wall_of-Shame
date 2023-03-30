@@ -5,7 +5,7 @@ from django_summernote.widgets import SummernoteWidget
 
 class EnquiryForm(forms.ModelForm):
     """
-    Django form to contact admin
+    Class to contact admin
     """
 
     class Meta:
