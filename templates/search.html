@@ -20,10 +20,10 @@ Search Resultts
 
                             <div class="image-container">
                                 {% if "placeholder" in persona.shameful_pic.url %}
-                                <img class="card-img-top"
+                                <img class="img-fluid w-100"
                                     src="https://codeinstitute.s3.amazonaws.com/fullstack/blog/default.jpg" alt="...">
                                 {% else %}
-                                <img class="card-img-top" src="{{ persona.shameful_pic.url }}" alt="...">
+                                <img class="img-fluid w-100" src="{{ persona.shameful_pic.url }}" alt="...">
                                 {% endif %}
 
                             </div>
