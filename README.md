@@ -10,7 +10,7 @@
 ## Live Project
 
 
-[View the live project here.]
+[View the live project here.](https://wall-of-shame.herokuapp.com/accounts/login/?next=/)
 
 ---
 

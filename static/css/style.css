@@ -11,12 +11,8 @@
 
 body {
     background-color: #FEFAE8;
-    min-height: 100vh;
 }
 
-footer {
-    margin-top: auto;
-}
 
 h1, h2, h3 {
     font-family: Nunito, sans-serif;
@@ -95,7 +91,7 @@ p, input, label {
 }
 
 /*--------------------------------------------Viewports*/
-/* 
+
 .adjust {
     height: 82vh;
 }
@@ -134,4 +130,4 @@ p, input, label {
     .adjust_edit {
         height: auto;
     }
-} */
+}
