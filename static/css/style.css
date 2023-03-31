@@ -106,7 +106,7 @@ p, input, label {
     height: 84vh;
 }
 
-@media (max-height: 1030px) {
+@media (max-width: 760px) {
     .adjust_contact {
         height: auto;
     }
@@ -116,7 +116,7 @@ p, input, label {
     height: 85vh;
 }
 
-@media (max-height: 1030px) {
+@media (max-width: 760px) {
     .adjust_create {
         height: auto;
     }
@@ -126,7 +126,7 @@ p, input, label {
     height: 85vh;
 }
 
-@media (max-height: 1030px) {
+@media (max-width: 760px) {
     .adjust_edit {
         height: auto;
     }
