@@ -58,6 +58,7 @@ Better than laugh than cry.
 * [Testing](#testing)
 
 * [Credits](#credits)
+  * [Ressources Used](#ressources-used)
   * [Code Used](#code-used)
   * [Content](#content)
   * [Media](#media)
@@ -458,11 +459,18 @@ The user search bar feature can be found from the nav bar for authenticated user
 
 - [Balsamiq](https://balsamiq.com/) - Used to create Wireframes for the project.
 - [mycolor](https://mycolor.space/) - for creating harmonious colors.
+ - [Lucid](https://lucid.app/users/login#/login) - for creating a Model ER.
 - [Responsinator](http://www.responsinator.com/) - test responsive website.
 - [W3 Schools](https://www.w3schools.com/) - for HTML, CSS, Django tips. 
 - [LearnDjango](https://learndjango.com/) - for understanding the logic of Django
 - [Django Docummentation](https://docs.djangoproject.com/en/3.2/) - to research and learn specific utilisation of Django framework
-- [readme-examples](https://github.com/kera-cudmore/readme-examples/blob/main/milestone1-readme.md#testing) -for creating the core strucutre of my README.md
+- [WC3 Validator](https://validator.w3.org/) - Used to validate the HTML code of the site.
+- [Jigsaw W3 Validator](https://jigsaw.w3.org/css-validator/)- Used to validate the CSS of the site.
+- [Jshint](https://jshint.com/) - Used to validate the Javascript of the site.
+- [Python Linter](https://pep8ci.herokuapp.com/) - Used to validate the Python of the site.
+- [Chrome dev tools (Lighthouse)](https://developer.chrome.com/docs/lighthouse/overview/) - Used to measure site performance, SEO and accessibility.
+
+
 
 ---
 
@@ -637,9 +645,9 @@ Use this part of the README to link to your TESTING.md file - you can view the e
 
 ## Credits
 
-👩🏻‍💻 View an example of a completed Credits section [here](https://github.com/kera-cudmore/BookWorm#Credits)
+### Ressources Used
 
-The Credits section is where you can credit all the people and sources you used throughout your project.
+- [readme-examples](https://github.com/kera-cudmore/readme-examples/blob/main/milestone1-readme.md#testing) -for creating the core strucutre of my README.md
 
 ### Code Used
 
