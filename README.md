@@ -273,7 +273,7 @@ The Contact Class represents a contact message from the user to the admin in ord
 
 ## Features
 
-### Authentication
+### Authentication - Log in
 
 Authentication is a feature of the Wall of Shame site, users will have to be authenticated whilst attempting to log in or else they will not be able to use any functionality of the site or view any information that WoS users have posted.
 
@@ -290,6 +290,17 @@ The register feature can be found bevor the log in page. This feature allows use
 <summary>Sign up image</summary>
 <img src="readme/features/register.png">
 </details>
+
+
+### Log out 
+
+The log out feature can be found from the nav bar for authenticated users.
+
+<details>
+<summary>Log out images</summary>
+<img src="">
+</details>
+
 
 
 ### Home Page
@@ -332,6 +343,11 @@ The like count feature can be found at the bottom of a persona. The total number
 <img src="">
 </details>
 
+### Like / Unlike button
+
+The like / unlike button feature can be found under a persona in the post details page. A user can click on the like button and it will add / subtract a like based on the user's current like status for that persona.
+
+
 
 ### Comment count
 
@@ -343,6 +359,57 @@ The comment count feature can be found at the bottom of a persona. The total num
 <img src="">
 </details>
 
+### Edit Persona
+
+The edit persona feature can be found a the bottom of the persona detail page of a currently logged in user and allows the caption of the post to be updated. The edit button will only be visible to owners of that persona to avoid other users editing persona they do not own.
+
+<details>
+<summary>Edit persona images</summary>
+<img src="">
+<img src="">
+</details>
+
+### Delete Post
+
+The delete post feature can be found at the bottom of the persona detail page of a currently logged in user. The delete button will only be visible to owners of that persona to avoid other users deleting personas they do not own.
+
+<details>
+<summary>Delete Post images</summary>
+<img src="">
+<img src="">
+</details>
+
+### Contact
+
+The contact feature can be found from the nav bar and allows both signed in users and anonymous users to contact the site admin.
+
+
+<details>
+<summary>Contact image</summary>
+<img src="readme/features/contact.png">
+</details>
+
+
+
+### Error Pages
+
+The error pages features will display 404 and 500 error pages and allow the user to easily navigate back to the site.
+
+<details>
+<summary>Error Page images</summary>
+<img src="">
+</details>
+
+
+### User Search
+
+The user search bar feature can be found from the nav bar for authenticated users.
+
+
+<details>
+<summary>User Search image</summary>
+<img src="readme/features/user-search.png">
+</details>
 
 
 ### Future Implementations
