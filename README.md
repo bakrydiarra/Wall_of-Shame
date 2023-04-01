@@ -265,6 +265,17 @@ The Contact Class represents a contact message from the user to the admin in ord
 
 ### Wireframes
 
+Due to time constraints and decisions made during the project, there are some differences between the live site and my initial wireframes.
+The wireframes are based on the three main pages, login_in, index (persona_list) and persona_detail. Error pages and other allauth templates haven't been sketched.
+
+<details>
+<summary>Wireframes</summary>
+<img src="docs/wireframes/log_in.png">
+<img src="docs/wireframes/persona_list.png">
+<img src="docs/wireframes/persona_details.png">
+</details>
+
+___
 
 
 ## Features
@@ -284,7 +295,7 @@ The register feature can be found bevor the log in page. This feature allows use
 
 <details>
 <summary>Sign up image</summary>
-<img src="readme/features/register.png">
+<img src="">
 </details>
 
 
@@ -404,7 +415,7 @@ The user search bar feature can be found from the nav bar for authenticated user
 
 <details>
 <summary>User Search image</summary>
-<img src="readme/features/user-search.png">
+<img src="">
 </details>
 
 
