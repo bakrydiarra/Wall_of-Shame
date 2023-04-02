@@ -6,6 +6,7 @@
 
 
 * [W3C Validator](#w3c-validator)
+* [Python Linter](#python-linter)
 * [Lighthouse](#lighthouse)
 
 
@@ -17,7 +18,7 @@
 ---
 
 
-###  W3C Validator
+##  W3C Validator
 
  There was few pages which returned errors, these errors are located within the Django Summernote library and is outwidth my control to edit therefore I have had to include this.
 
@@ -73,13 +74,51 @@
 
 No errors detected.
 
-  <details>
+<details>
 <summary>CSS </summary>
 <img src="docs/validation/css.png">
 </details>
 
+---
 
-### Lighthouse
+
+## Python Linter
+
+No erros detected.
+
+<details>
+<summary>Contact forms.py </summary>
+<img src="docs/validation/contact_forms_py.png">
+</details>
+
+<details>
+<summary>Contact models.py </summary>
+<img src="docs/validation/contact_models_py.png">
+</details>
+
+<details>
+<summary>Contact views.py </summary>
+<img src="docs/validation/contact_views_py.png">
+</details>
+
+<details>
+<summary>Placard views.py </summary>
+<img src="docs/validation/placard_views_py.png">
+</details>
+
+<details>
+<summary>Placard models.py </summary>
+<img src="docs/validation/placard_models_py.png">
+</details>
+
+<details>
+<summary>Placard forms.py </summary>
+<img src="docs/validation/placard_forms_py.png">
+</details>
+
+
+
+## Lighthouse
 
 Overall the results are good. The performance criteria shows in some pages the lowest score due to the down-loaded pictures.
 
