@@ -204,6 +204,8 @@ Overall the results are good. The performance criteria shows in some pages the l
 <img src="docs/features/responsive.gif">
 </details>
 
+---
+
 ### Testing the user experience
 
 ## BUGS

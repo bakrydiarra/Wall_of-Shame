@@ -108,34 +108,31 @@ Responsiveness to allow pleasant use across devices of different screen sizes
  User Story ID | As a/an | I want to be able to... | So that I can... |
 | --- | ----------- | ----------- | ----------- |
  | Viewing and Navigation | 
-| 1 | Site User | see a well defined landing page | understand the purpose and main features of the website | 
+ | 1 | Site User | see a well defined landing page | understand the purpose and main features of the website | 
  | 2 | Site Owner | Restrain the access of the contents with a required registration | ensure the privacy sphere| 
- | 3 | Site User| see persoa list| select one to read | 
- | 4 | Site User | see a pagination | easyly navigate | 
- | 5 | Site User | open a persona | click on a persona so that I can read the full persona | 
- | 6 | Site User| see likes | view the number of likes on each placard | 
- | 7 | Site User | see comments | read the conversation and particpate | 
+ | 3 | Site User | see a pagination | easyly navigate | 
+ | 4 | Site User| see likes | view the number of likes on each placard | 
+ | 5 | Site User | see comments | read the conversation and particpate | 
  | Registration and User Accounts | 
- | 8 | Site User |  create an account with a user name and passwordt |  log in to access content | 
- | 9 | Site User | login or logout | access or quit the content of the site | 
+ | 6 | Site User |  create an account with a user name and password |  log in to access content | 
+ | 7 | Site User | login or logout | access or quit the content of the site | 
  | Persona | 
- | 10 | Site User | see list of persona | select one and discover more about the one selected | 
- | 11 | Site User | create a persona from a form | share my persona with others | 
- | 12 | Site User | modifiy my persona | showcase other perspectives/ correct mistakes or improve content | 
- | 13 | Site Owner | create, read, update and delete persona | control the conent of the site | 
+ | 8 | Site User | see list of personas | select one and discover more about the one selected | 
+ | 9 | Site User | open a persona | click on a persona so that I can read the full persona | 
+ | 10 | Site User | create a persona from a form | share my persona with others | 
+ | 11 | Site User | update my persona | showcase other perspectives/ correct mistakes or improve content | 
  | Contact | 
- | 14 | Site User | contact the Site Owner  | report a personal matter |   
- | 15 | Site User | receive feedback  | confirm whether the contact form submission was successful or not. | 
+ | 12 | Site User | contact the Site Owner  | report a personal matter |   
+ | 13 | Site User | receive feedback  | confirm whether the contact form submission was successful or not. | 
  | Comment | 
- | 16 | Site User | comment persona | interact with the other persona owners | 
- | 17 |Site Owner| create and delete and update comments| control the content of the app | 
+ | 14 | Site User | comment persona | interact with the other persona owners | 
+ | 15 |Site Owner| create and delete and update comments| control the content of the app | 
  | Like | 
- | 18 | Site User | Site User| show my appreciation of another user's persona | 
- | 19 | Site Owner | Like / unlike | In case I wish to delete a rating and or a written review | 
+ | 16 | Site User | Like / unlike| show my appreciation of another user's persona | 
  | Feedback | 
- | 20 | Site User | receive feedback when I interact with the site | I know if my actions are successfull | 
+ | 17 | Site User | receive feedback when I interact with the site | I know if my actions are successfull | 
  | Search  | 
- | 21 | Site User | search for persona with some keywords | find a Persona which having corrXX | 
+ | 18 | Site User | search for persona with some keywords | find a Persona which having corrXX | 
 
 ---
 
