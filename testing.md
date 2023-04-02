@@ -19,12 +19,64 @@
 
 ###  W3C Validator
 
- There was few pages which returned errors, these errors are located within the Django Summernote library and is outwidth my control to edit therefore I have had to include this. 
+ There was few pages which returned errors, these errors are located within the Django Summernote library and is outwidth my control to edit therefore I have had to include this.
+
+  <details>
+<summary>Contact page</summary>
+<img src="docs/validation/contact.png">
+</details>
+
+<details>
+<summary>Create a Persona page</summary>
+<img src="docs/validation/create_persona.png">
+</details>
+
+<details>
+<summary>Delete page</summary>
+<img src="docs/validation/delete_page.png">
+</details>
+
+<details>
+<summary>Index page</summary>
+<img src="docs/validation/index.png">
+</details>
+
+<details>
+<summary>Sign in page</summary>
+<img src="docs/validation/log_in.png">
+</details>
+
+<details>
+<summary>Sign out page</summary>
+<img src="docs/validation/log_out.png">
+</details>
+
+<details>
+<summary>Persona detail page</summary>
+<img src="docs/validation/persona_detail.png">
+</details>
+
+<details>
+<summary>Sign up page</summary>
+<img src="docs/validation/sign_up.png">
+</details>
+
+<details>
+<summary>Search Results page</summary>
+<img src="docs/validation/search_results.png">
+</details>
+
+---
+
 
 #### **CSS Validation**
 
 No errors detected.
 
+  <details>
+<summary>CSS </summary>
+<img src="docs/validation/css.png">
+</details>
 
 
 ### Lighthouse

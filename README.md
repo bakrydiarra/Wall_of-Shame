@@ -1,16 +1,15 @@
 # Wall of Shame
 
 ## Project Portfolio 4 - Full Stack Development 
-## Full-Stack site - XXXXXX
 
 
- [amiresponsive](https://ui.dev/amiresponsive) 
+![amiresponsive](docs/validation/amiresponsive.png) 
 
 
 ## Live Project
 
 
-[View the live project here.](https://wall-of-shame.herokuapp.com/accounts/login/?next=/)
+[Here](https://wall-of-shame.herokuapp.com/accounts/login/?next=/)
 
 ---
 
