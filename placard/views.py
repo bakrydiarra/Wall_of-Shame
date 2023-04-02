@@ -177,7 +177,7 @@ class DeletePersonaView(DeleteView):
 
 def PersonaSearch(request):
     """
-    Class o search with keywords a persona
+    Class to search with keywords a persona
     """
     q = request.GET.get('q')
 

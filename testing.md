@@ -116,6 +116,7 @@ No erros detected.
 <img src="docs/validation/placard_forms_py.png">
 </details>
 
+---
 
 
 ## Lighthouse

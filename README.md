@@ -654,9 +654,16 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 ### Ressources Used
 
 - [readme-examples](https://github.com/kera-cudmore/readme-examples/blob/main/milestone1-readme.md#testing) -for creating the core strucutre of my README.md
+- [Django Blog](https://github.com/bakrydiarra/Django_blog) - Django walkthrough project "I Think Therefore I Blog" used as an inspiration and an orientation to my project
+- [Medium.com](https://medium.com/@ksarthak4ever/django-class-based-views-vs-function-based-view-e74b47b2e41b) - for understanding difference between Class Based Views vs Function Based Views
+- [LearnDjango](https://learndjango.com/tutorials/django-search-tutorial ) - for understanding filter with Q objects for a search functionality
+- [LearnDjango](https://learndjango.com/tutorials/django-slug-tutorial) - for understanding slugify
+- [Complex Lookups using Q Objects in Django](https://www.youtube.com/watch?v=81AUkuQ50m0&t=273s) - for understanding filter with Q objects for a search functionality
 
 ### Code Used
 
+- [Unacademy](https://player.uacdn.net/lesson-raw/W8VMBBPXM7RQRAAUXHGY/pdf/4571659735.pdf) - for decorating a class
+- [Django Blog](https://medium.com/@ksarthak4ever/django-class-based-views-vs-function-based-view-e74b47b2e41b) - the JavaScript Timeout function for messages display alert from the walkthrough project
 
 
 ### Content
