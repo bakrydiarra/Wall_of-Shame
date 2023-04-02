@@ -176,5 +176,34 @@ Overall the results are good. The performance criteria shows in some pages the l
 
 ## MANUAL TESTING
 
+### Browser Compatibility
+
+  - Testing has been carried out on the following browsers :
+  - Safari on macOS Ventura (Safari  Version 13.0.1)
+  - Chrome Version Version  Version 108.0.5359.124 
+
+### Test Cases and Results
+
+ - Chrome Developer tools and Mozilla Firefox Web Developer Tools were used throughout the development of the site to test functionality, responsive 
+    behaviour, alignment correctness etc:
+     - BakckBerry z30
+     - BlackBerry PlayBook
+     - iPhone SE
+     - iPhone XR
+     - iPad Air
+     - Surface Duo
+     - Nest Hub
+     - Nest Hub Max
+
+#### Responsive Design
+
+ - The display of the site has been made responsive to allow it to adapt for instance the grid structure layout to a single column.
+
+<details>
+<summary>Responsive Design</summary>
+<img src="docs/features/responsive.gif">
+</details>
+
+### Testing the user experience
 
 ## BUGS
