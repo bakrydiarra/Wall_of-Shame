@@ -160,7 +160,7 @@ The issues that I couldn’t tackle from the "Todo" column ended in the “Won�
 <img src="docs/agile/issue_3.png">
 <img src="docs/agile/issue_4.png">
 </details>
-
+---
 
 
 ### CRUD Functionality
@@ -246,7 +246,7 @@ The Contact Class represents a contact message from the user to the admin in ord
 <summary>Database Schema</summary>
 <img src="docs/database/database_diagram.png">
 </details>
-
+---
 
 ### Colour Scheme
 
@@ -256,7 +256,7 @@ The Contact Class represents a contact message from the user to the admin in ord
  <summary>Colour Palette</summary>
  <img src="docs/features/colors.png">
  </details> 
-
+---
 
 ### Typography
 

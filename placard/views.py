@@ -184,8 +184,8 @@ def PersonaSearch(request):
     results = []
     if q:
         results = Persona.objects.filter(
-            Q(shamefull_nickname__icontains=q) | Q(shameful_song__icontains=q) 
-            | Q(shameful_tv_show__icontains=q) | Q(shameful_habit__icontains=q) 
+            Q(shamefull_nickname__icontains=q) | Q(shameful_song__icontains=q)
+            | Q(shameful_tv_show__icontains=q) | Q(shameful_habit__icontains=q)
             | Q(shameful_story__icontains=q))
         return render(request, 'search.html', {
             'q': q,
