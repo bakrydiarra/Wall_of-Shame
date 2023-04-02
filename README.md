@@ -245,6 +245,7 @@ The Contact Class represents a contact message from the user to the admin in ord
 <summary>Database Schema</summary>
 <img src="docs/database/database_diagram.png">
 </details>
+
 ---
 
 ### Colour Scheme
@@ -255,6 +256,7 @@ The Contact Class represents a contact message from the user to the admin in ord
  <summary>Colour Palette</summary>
  <img src="docs/features/colors.png">
  </details> 
+
 ---
 
 ### Typography
@@ -288,6 +290,8 @@ Authentication is a feature of the Wall of Shame site, users will have to be aut
 <img src="docs/features/login_feat.png">
 </details>
 
+---
+
 ### Sign up
 
 The register feature can be found bevor the log in page. This feature allows users to register and create an account with persona via a form and keep privacy of the WoS community. XXXXX
@@ -297,17 +301,18 @@ The register feature can be found bevor the log in page. This feature allows use
 <img src="docs/features/signup_feat.png">
 </details>
 
+---
 
 ### Log out 
 
 The log out feature can be found from the nav bar for authenticated users.
 
 <details>
-<summary>Log out images</summary>
+<summary>Log out image</summary>
 <img src="docs/features/signout_feat.png">
 </details>
 
-
+---
 
 ### Home Page
 
@@ -318,70 +323,85 @@ The home page is accessible when the user is registered/Logged in. The page disp
 <img src="docs/features/persona_list_feat.png">
 </details>
 
+---
 
 ### Create Persona
 
 The create persona feature can be found from the home page through the button "Create a Persona".
 
-details>
+<details>
 <summary>Create Persona image</summary>
 <img src="docs/features/create_feat.png">
 </details>
 
+---
 
 ### Post Comment
 
 The post comment feature can be accessed from any user's persona detail page, below the persona is a form to enter a comment. The comment will then be posted under the persona.
 
 <details>
-<summary>Persona comment image</summary>
+<summary>Comment image</summary>
 <img src="docs/features/comment_feat.png">
 </details>
 
+---
 
 ### Like count 
 
 The like count feature can be found at the bottom of a persona. The total number of likes on the current persona will be displayed.
 
 <details>
-<summary>Like count image</summary>
-<img src="">
-<img src="">
+<summary>Like count images</summary>
+<img src="docs/features/count_like_feat.png">
+<img src="docs/features/count_like_bis_feat.png">
 </details>
+
+---
 
 ### Like / Unlike button
 
 The like / unlike button feature can be found under a persona in the post details page. A user can click on the like button and it will add / subtract a like based on the user's current like status for that persona.
 
-
+<details>
+<summary>Like/unlike btn images</summary>
+<img src="docs/features/unlike_btn_feat.png">
+<img src="docs/features/like_btn_feat.png">
+</details>
 
 ### Comment count
 
 The comment count feature can be found at the bottom of a persona. The total number of likes on the current persona will be displayed.
 
 <details>
-<summary>Comment count image</summary>
-<img src="">
-<img src="">
+<summary>Comment count images</summary>
+<img src="docs/features/count_comment_feat.png">
+<img src="docs/features/count_comment_feat_bis.png">
 </details>
+
+---
 
 ### Edit Persona
 
 The edit persona feature can be found a the bottom of the persona detail page of a currently logged in user and allows the caption of the post to be updated. The edit button will only be visible to owners of that persona to avoid other users editing persona they do not own.
 
 <details>
-<summary>Edit persona images</summary>
+<summary>Edit persona image</summary>
 <img src="docs/features/edit_feat.png">
 </details>
+
+---
 
 ### Delete Post
 
 The delete post feature can be found at the bottom of the persona detail page of a currently logged in user. The delete button will only be visible to owners of that persona to avoid other users deleting personas they do not own.
 
 <details>
-<summary>Delete Post images</summary>
+<summary>Delete Post image</summary>
 <img src="docs/features/delete_feat.png">
 </details>
+
+---
 
 ### Contact
 
@@ -393,7 +413,7 @@ The contact feature can be found from the nav bar and allows both signed in user
 <img src="docs/features/contact_feat.png">
 </details>
 
-
+---
 
 ### Error Pages
 
@@ -404,6 +424,7 @@ The error pages features will display 404 and 500 error pages and allow the user
 <img src="docs/features/error_pages.png">
 </details>
 
+---
 
 ### User Search
 
@@ -412,7 +433,7 @@ The user search bar feature can be found from the nav bar for authenticated user
 
 <details>
 <summary>User Search image</summary>
-<img src="">
+<img src="docs/features/search_feat.png">
 </details>
 
 
