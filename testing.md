@@ -56,6 +56,12 @@ Overall the results are good. The performance criteria shows in some pages the l
 </details>
 
 <details>
+<summary>Search Results page</summary>
+<img src="docs/validation/search_desktop.png">
+<img src="docs/validation/search_mobile.png">
+</details>
+
+<details>
 <summary>Sign up page</summary>
 <img src="docs/validation/sign_up_desktop.png">
 <img src="docs/validation/sign_up_mobile.png">
