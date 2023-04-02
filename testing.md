@@ -102,6 +102,11 @@ No erros detected.
 </details>
 
 <details>
+<summary>Contact admin.py </summary>
+<img src="docs/validation/contact_admin_py.png">
+</details>
+
+<details>
 <summary>Placard views.py </summary>
 <img src="docs/validation/placard_views_py.png">
 </details>
@@ -114,6 +119,11 @@ No erros detected.
 <details>
 <summary>Placard forms.py </summary>
 <img src="docs/validation/placard_forms_py.png">
+</details>
+
+<details>
+<summary>Placard admin.py </summary>
+<img src="docs/validation/placard_admin_py.png">
 </details>
 
 ---

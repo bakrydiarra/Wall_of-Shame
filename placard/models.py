@@ -92,16 +92,3 @@ class Comment(models.Model):
         displaying comments in the Django admin interface
         """
         return f'{self.author} commented persona {self.persona}'
-
-
-""" class Like(models.Model):
-    author = models.ForeignKey(
-        User, on_delete=models.CASCADE, related_name='author_likes'
-        )
-    persona = models.ForeignKey(
-        Persona, on_delete=models.CASCADE, related_name='persona_likes'
-        )
-
-    def __str__(self):
-        
-        return f'{self.author} liked {self.persona}' """
