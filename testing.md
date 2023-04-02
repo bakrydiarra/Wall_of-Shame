@@ -4,36 +4,76 @@
 
 ## CONTENTS
 
-* [AUTOMATED TESTING](#automated-testing)
-  * [W3C Validator](#w3c-validator)
-  * [Lighthouse](#lighthouse)
+
+* [W3C Validator](#w3c-validator)
+* [Lighthouse](#lighthouse)
 
 
 * [MANUAL TESTING](#manual-testing)
-  * [Testing User Stories](#testing-user-stories)
-  * [Full Testing](#full-testing)
-
+ 
 * [BUGS](#bugs)
-  * [Known Bugs](#known-bugs)
-  * [Solved Bugs](#solved-bugs)
+  
 
 ---
 
-## AUTOMATED TESTING
-
-The Automated Testing includes all the testing that is carried out by a program, like W3C HTML validation.
 
 ###  W3C Validator
 
-
+ There was few pages which returned errors, these errors are located within the Django Summernote library and is outwidth my control to edit therefore I have had to include this. 
 
 #### **CSS Validation**
 
-CSS Validation can only be done by copying and pasting the CSS file contents into the direct input. Make sure that the checkbox for CSS is selected.
+No errors detected.
 
-![W3C CSS Validation](documentation/milestone1-testing/w3c-css-validation.png)
+
 
 ### Lighthouse
+
+Overall the results are good. The performance criteria shows in some pages the lowest score due to the down-loaded pictures.
+
+<details>
+<summary>Contact page</summary>
+<img src="docs/validation/contact_desktop.png">
+<img src="docs/validation/contact_mobile.png">
+</details>
+
+<details>
+<summary>Create a Persona page</summary>
+<img src="docs/validation/create_desktop.png">
+<img src="docs/validation/create_mobile.png">
+</details>
+
+<details>
+<summary>Detail Persona page</summary>
+<img src="docs/validation/detail_desktop.png">
+<img src="docs/validation/detail_mobile.png">
+</details>
+
+<details>
+<summary>Index page/ Persona list</summary>
+<img src="docs/validation/index_desktop.png">
+<img src="docs/validation/index_mobile.png">
+</details>
+
+<details>
+<summary>Sign up page</summary>
+<img src="docs/validation/sign_up_desktop.png">
+<img src="docs/validation/sign_up_mobile.png">
+</details>
+
+<details>
+<summary>Sign in page</summary>
+<img src="docs/validation/sign_in_desktop.png">
+<img src="docs/validation/sign_in_mobile.png">
+</details>
+
+<details>
+<summary>Sign out page</summary>
+<img src="docs/validation/sign_out_desktop.png">
+<img src="docs/validation/sign_out_mobile.png">
+</details>
+
+---
 
 
 ## MANUAL TESTING
