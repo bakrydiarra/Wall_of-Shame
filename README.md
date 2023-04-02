@@ -499,13 +499,22 @@ The user search bar feature can be found from the nav bar for authenticated user
 
 ### Creating a Gitpod Workspace
 
+<details>
+<summary>Steps</summary>
+
 1. Log in to GitHub and go to the [Code Institute student template for Gitpod](https://github.com/Code-Institute-Org/gitpod-full-template)
 2. Click 'Use this Template' next to the Green Gitpod button.
 3. Add a repository name and click 'Create reposiory from template'.
 4. This will create a copy of the template in your own repository. Now you can click the green 'Gitpod' button to open a workspace in Gitpod.
 
+</details>
+
+---
 
 ### Installing support libraries and Django
+
+<details>
+<summary>Steps</summary>
 
 ```
 $ pip3 install 'django<4' gunicorn
@@ -516,19 +525,40 @@ $ pip3 install crispy-bootstrap5
 $ pipe install django-summernote
 ```
 
+</details>
+
+---
+
 ### Create requirements file
+
+<details>
+<summary>Step</summary>
 
 ```
 $ pip3 freeze --local > requirements.txt
 ```
 
+</details>
+
+---
+
 ### Create a project
+
+<details>
+<summary>Step</summary>
 
 ```
 $ django-admin startproject wall_of_shame .
 ```
 
+</details>
+
+---
+
 ### Create placard & contact app and add them to settings.py
+
+<details>
+<summary>Steps</summary>
 
 ```
 $ python3 manage.py startapp placard
@@ -551,15 +581,28 @@ INSTALLED_APPS = [
 ]
 ```
 
+</details>
+
+---
+
 ### Migrate changes
+
+<details>
+<summary>Steps</summary>
 
 ```
 $ python manage.py makemigrations
 $ python manage.py migrate
 ```
 
+</details>
+
+---
 
 ### Creating a database
+
+<details>
+<summary>Steps</summary>
 
 1. Go to [ElephantSQL.com](https://elephantsql.com/) and select to create a database
 2. Select the free database plan
@@ -578,14 +621,28 @@ if os.path.isfile('env.py'):
   import env
 ```
 
+</details>
+
+---
+
 ### Creating Cloudinary account
+
+<details>
+<summary>Steps</summary>
 
 1. The app uses Cloudinary to host the post images therefore a Cloudinary account will be required. 
 2. Log in to [Cloudinary](https://cloudinary.com/) or create an account for free.
 3. Navigate to the Dashboard on Cloudinary.
 4. Copy and store the value of the 'API Environment Variable" beginning at cloudinary:// until the end, this will be used in the Heroku Config Vars. 
 
+</details>
+
+---
+
 ### Creating env.py
+
+<details>
+<summary>Steps</summary>
 
 1. place env.py to the project root directory
 2. add env.py to git.ignore to avoid pushing this file to GitHub
@@ -598,13 +655,27 @@ os.environ["SECRET_KEY"]= a string used to generate security keys
 os.environ["CLOUDINARY_URL"] = The url for Cloudinary storage
 ```
 
+</details>
+
+---
+
 ### Creating a Procfile to project root directory
+
+<details>
+<summary>Step</summary>
 
 ```
 web: gunicorn wall_of_shame.wsgi
 ```
 
+</details>
+
+---
+
 ### Creating an application with Heroku
+
+<details>
+<summary>Steps</summary>
 
 
 1. Create a Heroku account and log in.
@@ -619,10 +690,14 @@ web: gunicorn wall_of_shame.wsgi
 DEBUG = False
 ```
 
+</details>
 
-
+---
 
 ### Forking the GitHub Repository
+
+<details>
+<summary>Steps</summary>
 
 Forks are used to propose changes to someone else's project or to use someone else's project as a starting point for your own idea. By forking the GitHub Repository you make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository.
 
@@ -632,7 +707,14 @@ To Fork a Github Repository:
 2. Locate the Fork button in the top-right corner of the page, click Fork.
 3. You should now have a copy of the original repository in your GitHub account.
 
+</details>
+
+---
+
 ### Making a Local Clone
+
+<details>
+<summary>Steps</summary>
 
 You will now have a fork of the repository, but you don't have the files in that repository locally on your computer.
 
@@ -650,6 +732,8 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 ```
 
 7. Press Enter. Your local clone will be created.
+
+</details>
 
 ---
 
