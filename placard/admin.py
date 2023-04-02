@@ -20,7 +20,7 @@ class CommentAdmin(SummernoteModelAdmin):
     summernote_fields = ('content',)
 
 
-@admin.register(Like)
+""" @admin.register(Like)
 class LikeAdmin(admin.ModelAdmin):
     list_display = ('author', 'persona')
-    list_filter = ('author',)
+    list_filter = ('author',) """

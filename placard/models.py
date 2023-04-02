@@ -94,7 +94,7 @@ class Comment(models.Model):
         return f'{self.author} commented persona {self.persona}'
 
 
-class Like(models.Model):
+""" class Like(models.Model):
     author = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name='author_likes'
         )
@@ -103,8 +103,5 @@ class Like(models.Model):
         )
 
     def __str__(self):
-        """
-        To return a string representation of like -
-        displaying likes in the Django admin interface
-        """
-        return f'{self.author} liked {self.persona}'
+        
+        return f'{self.author} liked {self.persona}' """
