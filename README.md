@@ -285,7 +285,7 @@ Authentication is a feature of the Wall of Shame site, users will have to be aut
 
 <details>
 <summary>Authentication image</summary>
-<img src="">
+<img src="docs/features/login_feat.png">
 </details>
 
 ### Sign up
@@ -294,7 +294,7 @@ The register feature can be found bevor the log in page. This feature allows use
 
 <details>
 <summary>Sign up image</summary>
-<img src="">
+<img src="docs/features/signup_feat.png">
 </details>
 
 
@@ -304,7 +304,7 @@ The log out feature can be found from the nav bar for authenticated users.
 
 <details>
 <summary>Log out images</summary>
-<img src="">
+<img src="docs/features/signout_feat.png">
 </details>
 
 
@@ -314,8 +314,8 @@ The log out feature can be found from the nav bar for authenticated users.
 The home page is accessible when the user is registered/Logged in. The page displays the list of personas.
 
 <details>
-<summary>Home page image</summary>
-<img src="">
+<summary>Home page image/index</summary>
+<img src="docs/features/persona_list_feat.png">
 </details>
 
 
@@ -325,7 +325,7 @@ The create persona feature can be found from the home page through the button "C
 
 details>
 <summary>Create Persona image</summary>
-<img src="">
+<img src="docs/features/create_feat.png">
 </details>
 
 
@@ -335,7 +335,7 @@ The post comment feature can be accessed from any user's persona detail page, be
 
 <details>
 <summary>Persona comment image</summary>
-<img src="">
+<img src="docs/features/comment_feat.png">
 </details>
 
 
@@ -371,8 +371,7 @@ The edit persona feature can be found a the bottom of the persona detail page of
 
 <details>
 <summary>Edit persona images</summary>
-<img src="">
-<img src="">
+<img src="docs/features/edit_feat.png">
 </details>
 
 ### Delete Post
@@ -381,8 +380,7 @@ The delete post feature can be found at the bottom of the persona detail page of
 
 <details>
 <summary>Delete Post images</summary>
-<img src="">
-<img src="">
+<img src="docs/features/delete_feat.png">
 </details>
 
 ### Contact
@@ -392,7 +390,7 @@ The contact feature can be found from the nav bar and allows both signed in user
 
 <details>
 <summary>Contact image</summary>
-<img src="readme/features/contact.png">
+<img src="docs/features/contact_feat.png">
 </details>
 
 
@@ -403,7 +401,7 @@ The error pages features will display 404 and 500 error pages and allow the user
 
 <details>
 <summary>Error Page images</summary>
-<img src="">
+<img src="docs/features/error_pages.png">
 </details>
 
 
