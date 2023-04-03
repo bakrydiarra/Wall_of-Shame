@@ -749,8 +749,10 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 - [readme-examples](https://github.com/kera-cudmore/readme-examples/blob/main/milestone1-readme.md#testing) -for creating the core strucutre of my README.md
 - [Django Blog](https://github.com/bakrydiarra/Django_blog) - Django walkthrough project "I Think Therefore I Blog" used as an inspiration and an orientation to my project
 - [Medium.com](https://medium.com/@ksarthak4ever/django-class-based-views-vs-function-based-view-e74b47b2e41b) - for understanding difference between Class Based Views vs Function Based Views
+- [Exploring Python Classes with Ben Kavanagh](https://www.youtube.com/watch?v=opOK_1g1rsw&list=PL_7334VduOHvzZYlgy_0kZLcic2NINCUt&index=7) - for understanding ifference between Class Based Views vs Function Based Views
 - [LearnDjango](https://learndjango.com/tutorials/django-search-tutorial ) - for understanding filter with Q objects for a search functionality
 - [LearnDjango](https://learndjango.com/tutorials/django-slug-tutorial) - for understanding slugify
+- [LearnDjango](https://learndjango.com/tutorials/) - for understanding use of Django Framework
 - [Complex Lookups using Q Objects in Django](https://www.youtube.com/watch?v=81AUkuQ50m0&t=273s) - for understanding filter with Q objects for a search functionality
 
 ### Code Used
@@ -761,9 +763,11 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 
 ### Content
 
-Who wrote the content for the website? 
+All texts were written by myself 
 
 ###  Media
+
+All pictures were taken from [Unsplash](https://unsplash.com/):
 
 
   
