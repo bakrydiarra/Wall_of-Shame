@@ -121,20 +121,19 @@ Responsiveness to allow pleasant use across devices of different screen sizes
  | 9 | Site User | see list of personas | select one and discover more about the one selected | 
  | 10 | Site User | open a persona | click on a persona so that I can read the full persona | 
  | 11 | Site User | create a persona from a form | share my persona with others | 
- | 12 | Site User | update my persona | showcase other perspectives/ correct mistakes or improve content | 
- | 13 | Site User | update my persona | showcase other perspectives/ correct mistakes or improve content | 
- | 14 |Site Owner| create and delete and update persona | control the content of the app | 
+ | 12 | Site User | update his persona | showcase other perspectives/ correct mistakes or improve content | 
+ | 13 |Site User| delete his persona | control his content of the app | 
  | Contact | 
- | 15 | Site User | contact the Site Owner  | report a personal matter |   
- | 16 | Site User | receive feedback  | confirm whether the contact form submission was successful or not. | 
+ | 14 | Site User | contact the Site Owner  | report a personal matter |   
+ | 15 | Site User | receive feedback  | confirm whether the contact form submission was successful or not. | 
  | Comment | 
- | 17 | Site User | comment persona | interact with the other persona owners | 
+ | 16 | Site User | comment persona | interact with the other persona owners | 
  | Like | 
- | 18 | Site User | Like / unlike| show my appreciation of another user's persona | 
+ | 17 | Site User | Like / unlike| show my appreciation of another user's persona | 
  | Feedback | 
- | 19 | Site User | receive feedback when I interact with the site | I know if my actions are successfull | 
+ | 18 | Site User | receive feedback when I interact with the site | I know if my actions are successfull | 
  | Search  | 
- | 20 | Site User | search for with some keywords | find a Persona with certain information | 
+ | 19 | Site User | search for with some keywords | find a Persona with certain information | 
 
 ---
 
