@@ -123,12 +123,12 @@ Responsiveness to allow pleasant use across devices of different screen sizes
  | 11 | Site User | create a persona from a form | share my persona with others | 
  | 12 | Site User | update my persona | showcase other perspectives/ correct mistakes or improve content | 
  | 13 | Site User | update my persona | showcase other perspectives/ correct mistakes or improve content | 
+ | 14 |Site Owner| create and delete and update persona | control the content of the app | 
  | Contact | 
- | 14 | Site User | contact the Site Owner  | report a personal matter |   
- | 15 | Site User | receive feedback  | confirm whether the contact form submission was successful or not. | 
+ | 15 | Site User | contact the Site Owner  | report a personal matter |   
+ | 16 | Site User | receive feedback  | confirm whether the contact form submission was successful or not. | 
  | Comment | 
- | 16 | Site User | comment persona | interact with the other persona owners | 
- | 17 |Site Owner| create and delete and update persona | control the content of the app | 
+ | 17 | Site User | comment persona | interact with the other persona owners | 
  | Like | 
  | 18 | Site User | Like / unlike| show my appreciation of another user's persona | 
  | Feedback | 
