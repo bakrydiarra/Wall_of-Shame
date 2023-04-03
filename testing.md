@@ -183,6 +183,16 @@ Overall the results are good. The performance criteria shows in some pages the l
 
 ---
 
+## Jshint 
+
+no error to be found.
+
+
+<details>
+<summary>Javascript Code</summary>
+<img src="docs/validation/js_validation.png">
+</details>
+
 
 ## MANUAL TESTING
 
@@ -303,7 +313,7 @@ Overall the results are good. The performance criteria shows in some pages the l
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-|  Register  | Navigate to the pic pals site and click on the Sign up button located below the log in section or click of the logo WoS or Register btn in navbar. Fill in the form with the required fields for registration and click on the sign up button.  | User to create an account with the information provided in the form    | Works as expected |
+|  Register  | Navigate to Wall of shame site and click on the Sign up button located below the log in section or click of the logo WoS or Register btn in navbar. Fill in the form with the required fields for registration and click on the sign up button.  | User to create an account with the information provided in the form    | Works as expected |
 
 <details>
 <summary>Demo</summary>
@@ -323,7 +333,7 @@ Overall the results are good. The performance criteria shows in some pages the l
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-|  Log out  | From any page whilst logged in click on the sign out button located in the right of the nav bar, or if using a small screen device from the list from the hamburger menu toggle.  | User to log out successfully redirected to the log in page | Works as expected |
+|  Log out  | From any page whilst logged in click on the sign out button located in the right of the nav bar, or if using a small screen device from the list from the hamburger menu toggle.  | Logged in user  logged out successfully redirected to the log in page | Works as expected |
 
 <details>
 <summary>Demos</summary>
@@ -408,4 +418,91 @@ Overall the results are good. The performance criteria shows in some pages the l
 
 ---
 
+### Comment
+
+15. As a site user, I want to be able to comment personas so that I can interact with the other persona owners.
+
+| Feature       | Action        | Expected Result  | Actual Result |
+| ------------- | ------------- | -------------    | ------------- |
+|  Post Comment  | From any person detail page whilst logged in fill in the comment form below the persona and press "post comment" button  .  | Logged in user filled the comment form and clicked button. Once the form submitted, the user can see its comment odered from the oldest to the newest and the count of comments changed | Works as expected |
+
+<details>
+<summary>Demo</summary>
+<img src="docs/features/post_comment.gif">
+</details>
+
+---
+
+### Like/unlike
+
+16. As a site user, I want to be able to like/unlike persone, so that I can show my appreciation of another user's persona.
+
+| Feature       | Action        | Expected Result  | Actual Result |
+| ------------- | ------------- | -------------    | ------------- |
+|  Like/Unlike  | From any person detail page whilst logged in go under the persona and clik like or unlike button.  | Logged in user filled clicked the button under the persona. Once the button has been clicked, the count of likes changed and the button itself as well | Works as expected |
+
+<details>
+<summary>Demo</summary>
+<img src="docs/features/like_unlike.gif">
+</details>
+
+---
+
+### Feedback
+
+17. AS a site user, I want to be able to receive feedback when I interact with the site so that I can know if my actions are successfully.
+
+| Feature       | Action        | Expected Result  | Actual Result |
+| ------------- | ------------- | -------------    | ------------- |
+|  Message succes/error  | Register. Log in. Log out. Fill a form.  | when the user used a features a success or error message appeared on the top of the page | Works as expected |
+
+<details>
+<summary>Demo</summary>
+<img src="docs/features/messages.gif">
+</details>
+
+---
+
+### Search
+
+18. As a site user, I want to able to search for with some keywords so that I can find a Persona with certain information
+
+| Feature       | Action        | Expected Result  | Actual Result |
+| ------------- | ------------- | -------------    | ------------- |
+|  Search  | From any page whilst logged in write on the serach field and click the search button located in the right of the nav bar, or if using a small screen device from the list from the hamburger menu toggle  | when the user use wrote a keyword and pressed the search button, he is redirected to the results page | Works as expected |
+
+<details>
+<summary>Demo</summary>
+<img src="docs/features/search.gif">
+</details>
+
 ## BUGS
+
+During the project I encountered a number of bugs, most of them resulted from mispelling mistakes, case sensitiveness or carless erros during coding.
+
+| Bug           | Fix           |
+| ------------- | ------------- |
+| Django urls not working | While I was working on the contact app. I couldn't render the template for contact due to the unecessary url for home that I copied and pasted from the app placard. Once I deleted the url. The url for contact worked |
+| Django urls not working | As I wrote the url for PersonaSearch, I forgot to erase the parentheses added by IDE. Once the parentheses were gone. The url worked |
+| Class View PersonaDetail not working | It was impossible to render the detail of persona due to misspelling and lower/uppercase sensitiveness. Once the word liked was propoerly corrected. The PersonaDetail could work |
+| Class View PersonaLike  not working| It was impossible to render the view of like because the parameter of the Class was starting with a lowercase. Once it was corrected. The class PersonaLike could work |
+| An overide function from the Class View PersonaDetail not working   | The attribute "user.username" wasn't existed in the data models. Therefore couldn't be called. The ForeignKey user was enough and was indeed existing in the data model  |
+| Allauth Django not working | Due to a missing comma, an error kept comming in the terminal. Once the comma was added. It worked properly|
+
+
+<details>
+<summary>Coding Erros</summary>
+<img src="docs/errors/mispelling_1.png">
+<img src="docs/errors/mispelling_2.png">
+<img src="docs/errors/comma_problem.png">
+<img src="docs/errors/lowercase_problem.png">
+<img src="docs/errors/url_home_problem.png">
+<img src="docs/errors/url_search_problem.png">
+<img src="docs/errors/attribute_problem.png">
+
+</details
+
+---
+
+
+[Back to README.md](README.md)
