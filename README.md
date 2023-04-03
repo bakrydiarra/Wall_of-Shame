@@ -125,15 +125,14 @@ Responsiveness to allow pleasant use across devices of different screen sizes
  | 13 |Site User| delete his persona | control his content of the app | 
  | Contact | 
  | 14 | Site User | contact the Site Owner  | report a personal matter |   
- | 15 | Site User | receive feedback  | confirm whether the contact form submission was successful or not. | 
  | Comment | 
- | 16 | Site User | comment persona | interact with the other persona owners | 
+ | 15 | Site User | comment persona | interact with the other persona owners | 
  | Like | 
- | 17 | Site User | Like / unlike| show my appreciation of another user's persona | 
+ | 16 | Site User | Like / unlike| show my appreciation of another user's persona | 
  | Feedback | 
- | 18 | Site User | receive feedback when I interact with the site | I know if my actions are successfull | 
+ | 17 | Site User | receive feedback when I interact with the site | I know if my actions are successfull | 
  | Search  | 
- | 19 | Site User | search for with some keywords | find a Persona with certain information | 
+ | 18 | Site User | search for with some keywords | find a Persona with certain information | 
 
 ---
 

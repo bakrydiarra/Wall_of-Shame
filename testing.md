@@ -391,5 +391,21 @@ Overall the results are good. The performance criteria shows in some pages the l
 <img src="docs/features/delete_persona.gif">
 </details>
 
+---
+
+### Contact
+
+14. As a site user, I want to be able to contact the sie owner, so that I can report a matter.
+
+| Feature       | Action        | Expected Result  | Actual Result |
+| ------------- | ------------- | -------------    | ------------- |
+|  Contact Form  | From any page whilst logged in click on the contact button located in the right of the nav bar, or if using a small screen device from the list from the hamburger menu toggle.  | User to clicked on the button and  successfully redirected to a contact form. Once the form is successfully filled out, the user is redirected on the landing page  | Works as expected |
+
+<details>
+<summary>Demo</summary>
+<img src="docs/features/contact.gif">
+</details>
+
+---
 
 ## BUGS
