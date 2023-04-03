@@ -293,5 +293,41 @@ Overall the results are good. The performance criteria shows in some pages the l
 <img src="docs/features/login.gif">
 </details>
 
+---
+
+
+5. As a site user, I want to be able to see likes so that I can view the number of likes on each persona
+6. As a site user, I want to be able to see comments so that I can view the number of comments on each persona
+
+| Feature       | Action        | Expected Result  | Actual Result |
+| ------------- | ------------- | -------------    | ------------- |
+|  Likes  | whilst logged in the landing page offered a list of personas each cards show number of like. If one card clicked the number of likes is still visible  | User logged see successfully a list of persona with number of likes and when one clicked this information is still available | Works as expected |
+
+
+| Feature       | Action        | Expected Result  | Actual Result |
+| ------------- | ------------- | -------------    | ------------- |
+|  Comments  | whilst logged in the landing page offered a list of personas each cards show number of comments. If one persona clicked the number of comments is still visible and resumed twice  | User logged see successfully a list of persona with number of comments and when one clicked this information is still available, even twice | Works as expected |
+
+<details>
+<summary>Demo</summary>
+<img src="docs/features/like_comment.gif">
+</details>
+
+---
+
+9. As a site user, I want to be able to see a list of persona, so that I can select one and discover more about the one selected.
+10. As a site user, I want to be able to open a persona, so that I can click on a persona so that I can read the full persona.
+
+| Feature       | Action        | Expected Result  | Actual Result |
+| ------------- | ------------- | -------------    | ------------- |
+|  Persona  | whilst logged in the landing page offered a list of personas each. If one is clicked, details are revealed  | User logged see successfully a list of persona  and when one clicked the information are detailed | Works as expected |
+
+<details>
+<summary>Demo</summary>
+<img src="docs/features/persona.gif">
+</details>
+
+---
+
 
 ## BUGS
