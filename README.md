@@ -112,7 +112,7 @@ Responsiveness to allow pleasant use across devices of different screen sizes
  | 2 | Site User | see the navigation bar | easily navigate | 
  | 3 | Site User | see the footer  |be redirected to social media relating to the website |  
  | 4 | Site User | see a pagination | easily navigate | 
- | 5 | Site User| see likes | view the number of likes on each placard | 
+ | 5 | Site User| see likes | view the number of likes on each persona | 
  | 6 | Site User | see comments | read the conversation and particpate | 
  | Registration and User Accounts | 
  | 7 | Site User |  create an account with a user name and password |  log in to access content | 
