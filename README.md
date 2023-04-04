@@ -15,8 +15,8 @@
 
 ## Site info
 
- - Wall of shame is an application which encourages people to share their shameful experiences or shameful information about them in order to overcome the burden of feeling ashamed of something 
-and the stigmatization which comes with it . 
+ - Wall of shame is an application that encourages people to share shameful information about them in order to overcome the burden of feeling ashamed of 
+and the stigmatization which could come with it . 
 A choice to laugh about things that we’re usually avoiding to tell. A place to  discover other shameless fellows whos embarrass one ethos: 
 Better than laugh than cry.
 
@@ -108,7 +108,7 @@ Responsiveness to allow pleasant use across devices of different screen sizes
  User Story ID | As a/an | I want to be able to... | So that I can... |
 | --- | ----------- | ----------- | ----------- |
  | Viewing and Navigation | 
- | 1 | Site Owner | Restrain the access of the contents with a required registration | ensure the privacy sphere|
+ | 1 | Site Owner | restrain the access of the contents with a required registration | ensure the privacy sphere|
  | 2 | Site User | see the navigation bar | easily navigate | 
  | 3 | Site User | see the footer  |be redirected to social media relating to the website |  
  | 4 | Site User | see a pagination | easily navigate | 
@@ -271,6 +271,18 @@ ___
 
 ## Features
 
+### Navbar
+
+A navigation bar that differentiates users who aren't logged in from those who are.
+
+<details>
+<summary>Authentication image</summary>
+<img src="docs/features/navbar_loggedin_user.png">
+<img src="docs/features/navbar_nologgedin_user.png">
+</details>
+
+---
+
 ### Authentication - Log in
 
 Authentication is a feature of the Wall of Shame site, users will have to be authenticated whilst attempting to log in or else they will not be able to use any functionality of the site or view any information that WoS users have posted.
@@ -284,7 +296,7 @@ Authentication is a feature of the Wall of Shame site, users will have to be aut
 
 ### Sign up
 
-The register feature can be found bevor the log in page. This feature allows users to register and create an account with persona via a form and keep privacy of the WoS community. XXXXX
+The register feature can be found bevor the log in page. This feature allows users to register and create an account with persona via a form and keep privacy of the WoS community.
 
 <details>
 <summary>Sign up image</summary>
@@ -351,7 +363,7 @@ The like count feature can be found at the bottom of a persona. The total number
 
 ### Like / Unlike button
 
-The like / unlike button feature can be found under a persona in the post details page. A user can click on the like button and it will add / subtract a like based on the user's current like status for that persona.
+The like / unlike button feature can be found under a persona details pag. A user can click on the like button and it will add / subtract a like based on the user's current like status for that persona.
 
 <details>
 <summary>Like/unlike btn images</summary>
@@ -429,6 +441,7 @@ The user search bar feature can be found from the nav bar for authenticated user
 
 ### Future Implementations
 
+A profile page could be future to improve the experience. It would allow the user to share more information and could be used to gather all his personas in one place which would be easier to control his content.
 
 
 
@@ -478,8 +491,9 @@ The user search bar feature can be found from the nav bar for authenticated user
 
 - [Balsamiq](https://balsamiq.com/) - Used to create Wireframes for the project.
 - [mycolor](https://mycolor.space/) - for creating harmonious colors.
- - [Lucid](https://lucid.app/users/login#/login) - for creating a Model ER.
-- [Responsinator](http://www.responsinator.com/) - test responsive website.
+- [Lucid](https://lucid.app/users/login#/login) - for creating a Model ER.
+- [Unsplash](https://unsplash.com/) - for content pictures
+- [amiresponsive](https://ui.dev/amiresponsive) - test responsive website.
 - [W3 Schools](https://www.w3schools.com/) - for HTML, CSS, Django tips. 
 - [LearnDjango](https://learndjango.com/) - for understanding the logic of Django
 - [Django Docummentation](https://docs.djangoproject.com/en/3.2/) - to research and learn specific utilisation of Django framework
@@ -746,7 +760,7 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 
 ### Ressources Used
 
-- [readme-examples](https://github.com/kera-cudmore/readme-examples/blob/main/milestone1-readme.md#testing) -for creating the core strucutre of my README.md
+- [readme-examples](https://github.com/kera-cudmore/readme-examples/blob/main/milestone1-readme.md#testing) -for creating the core strucutre of my README.md amd testing-md
 - [Django Blog](https://github.com/bakrydiarra/Django_blog) - Django walkthrough project "I Think Therefore I Blog" used as an inspiration and an orientation to my project
 - [Medium.com](https://medium.com/@ksarthak4ever/django-class-based-views-vs-function-based-view-e74b47b2e41b) - for understanding difference between Class Based Views vs Function Based Views
 - [Exploring Python Classes with Ben Kavanagh](https://www.youtube.com/watch?v=opOK_1g1rsw&list=PL_7334VduOHvzZYlgy_0kZLcic2NINCUt&index=7) - for understanding ifference between Class Based Views vs Function Based Views
@@ -758,7 +772,7 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 ### Code Used
 
 - [Unacademy](https://player.uacdn.net/lesson-raw/W8VMBBPXM7RQRAAUXHGY/pdf/4571659735.pdf) - for decorating a class
-- [Django Blog](https://medium.com/@ksarthak4ever/django-class-based-views-vs-function-based-view-e74b47b2e41b) - the JavaScript Timeout function for messages display alert from the walkthrough project
+- [Django Blog](https://medium.com/@ksarthak4ever/django-class-based-views-vs-function-based-view-e74b47b2e41b) - the JavaScript Timeout function for messages display alert from the walkthrough project "I Think Therefore I Blog" 
 
 
 ### Content
@@ -768,7 +782,9 @@ All texts were written by myself
 ###  Media
 
 All pictures were taken from [Unsplash](https://unsplash.com/):
-
+Photographers:
+Tim Mossholder
+Ikhsan Sugiarto
 
   
 ###  Acknowledgments

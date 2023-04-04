@@ -13,9 +13,9 @@ Persona Detail
 
   <div class="card mx-auto mt-5 w-50">
     {% if "placeholder" in persona.shameful_pic.url %}
-    <img src="https://codeinstitute.s3.amazonaws.com/fullstack/blog/default.jpg" class="card-img-top" alt="...">
+    <img src="https://codeinstitute.s3.amazonaws.com/fullstack/blog/default.jpg" class="card-img-top" alt="user picture">
     {% else %}
-    <img class="img-fluid w-100" src="{{ persona.shameful_pic.url }}" alt="...">
+    <img class="img-fluid w-100" src="{{ persona.shameful_pic.url }}" alt="user picture">
     {% endif %}
     <div class="card-body">
       <h3 class="card-title text-center text-uppercase">{{persona.shamefull_nickname | safe }}</h3>

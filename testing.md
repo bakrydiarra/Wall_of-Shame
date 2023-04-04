@@ -231,12 +231,12 @@ no error to be found.
 ### Viewing and Navigation
 
 
-1. As a site owner I want to be able to restrain the access of the contents with a required ensure the privacy sphereregistration.
+1. As a site owner I want to be able to restrain the access of the content with a log in required to ensure the privacy of WoS users.
 
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-|  Mandatory Log in  | User click on the website link  | If user not authenticated, he has to log in or register  | Works as intended |
+|  Mandatory Log in  | User click on the website link  | User not authenticated had to log in or register  | Works as expected |
 
 
 <details>
@@ -251,10 +251,11 @@ no error to be found.
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-|  Nav Bar  | Log in and scroll to the top of any page  | Nav Bar to be displayed along the top of the page or via a hamburger toggle if on a smaller screen | Works as expected |
+|  Nav Bar  | Click on the Wall of Shame link and scroll to the top of any page  | Nav Bar to be displayed along the top of the page or via a hamburger toggle if on a smaller screen wit active links to navigate the site | Works as expected |
+
 
 <details>
-<summary>Demo</summary>
+<summary>Demos</summary>
 <img src="docs/features/navbar.gif">
 </details>
 
@@ -269,6 +270,7 @@ no error to be found.
 <details>
 <summary>Demo</summary>
 <img src="docs/features/footer.gif">
+<img src="docs/features/links.gif">
 </details>
 
 ---
@@ -278,7 +280,7 @@ no error to be found.
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-|  Pagination  | Logged in  and scroll to the bottom of the landing page  | Pagination to be displayed along the bootom of the page if there's more than 6 personas published | Works as expected |
+|  Pagination  | Logged in  and scroll to the bottom of the landing page  | Pagination to be displayed along the bootom of the page if there's more than 6 personas published per page | Works as expected |
 
 <details>
 <summary>Demo</summary>
@@ -292,7 +294,7 @@ no error to be found.
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-|  Likes  | whilst logged in the landing page offered a list of personas each cards show number of like. If one card clicked the number of likes is still visible  | User logged see successfully a list of persona with number of likes and when one clicked this information is still available | Works as expected |
+|  Likes  | whilst logged in the landing page offered a list of personas each cards show number of likes. If one card clicked the number of likes is still visible  | User logged see successfully a list of persona with number of likes and when one persona clicked this information is still available | Works as expected |
 
 
 | Feature       | Action        | Expected Result  | Actual Result |
@@ -313,7 +315,7 @@ no error to be found.
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-|  Register  | Navigate to Wall of shame site and click on the Sign up button located below the log in section or click of the logo WoS or Register btn in navbar. Fill in the form with the required fields for registration and click on the sign up button.  | User to create an account with the information provided in the form    | Works as expected |
+|  Register  | Navigate to Wall of shame site and click on the Sign up button located below the log in section or click of the logo WoS or Register btn in navbar. Fill in the form with the required fields for registration and click on the sign up button.  | User created an account with the information provided in the form  | Works as expected |
 
 <details>
 <summary>Demo</summary>
@@ -333,7 +335,7 @@ no error to be found.
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-|  Log out  | From any page whilst logged in click on the sign out button located in the right of the nav bar, or if using a small screen device from the list from the hamburger menu toggle.  | Logged in user  logged out successfully redirected to the log in page | Works as expected |
+|  Log out  | From any page whilst logged in click on the sign out button located in the right of the nav bar, or if using a small screen device from the list from the hamburger menu toggle.  | Logged in user logged out successfully and is redirected to the log in page | Works as expected |
 
 <details>
 <summary>Demos</summary>
@@ -362,7 +364,7 @@ no error to be found.
 11. As a site user, I want to be able to create a persona, so that I can share mine with other users.
 
 | Feature       | Action        | Expected Result  | Actual Result |
-| ------------- | --------- in---- | -------------    | ------------- |
+| ------------- |  -------------  | -------------    | ------------- |
 |  Create Persona  | log in and scroll the landing page to the click "create a persona" button. | User clicked sucessfully on the "create a persona" button and is redirected to a form to fill out. Once the form is successfully filled out, the user is redirected on the landing page and its persona will be place in last position. Odered by the date of creation  | Works as expected |
 
 
@@ -393,7 +395,7 @@ no error to be found.
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-|  Delete Persona  | Log in and navigate to the persona detail by clicking on the persona in question. At the bottom of the persona card click on the delete button. | User clicked sucessfully on the "delete" button at the bottom of one of his own persona and  is redirected to a page where his demand is to be confirmed. Once the confirmatin is successfully validated, the user is redirected on the landing page and its persona deleted persona is nowhere to be found.  | Works as expected |
+|  Delete Persona  | Log in and navigate to the persona detail by clicking on the persona in question. At the bottom of the persona card click on the delete button. | User clicked sucessfully on the "delete" button at the bottom of one of his own persona and  is redirected to a page where his demand is to be confirmed. Once the confirmation is successfully validated, the user is redirected on the landing page and its persona deleted persona is nowhere to be found.  | Works as expected |
 
 
 <details>
@@ -409,7 +411,7 @@ no error to be found.
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-|  Contact Form  | From any page whilst logged in click on the contact button located in the right of the nav bar, or if using a small screen device from the list from the hamburger menu toggle.  | User to clicked on the button and  successfully redirected to a contact form. Once the form is successfully filled out, the user is redirected on the landing page  | Works as expected |
+|  Contact Form  | From any page click on the contact button located in the right of the nav bar, or if using a small screen device from the list from the hamburger menu toggle.  | User clicked on the button and  successfully redirected to a contact form. Once the form is successfully filled out, the user is redirected on the landing page  | Works as expected |
 
 <details>
 <summary>Demo</summary>
@@ -424,7 +426,7 @@ no error to be found.
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-|  Post Comment  | From any person detail page whilst logged in fill in the comment form below the persona and press "post comment" button  .  | Logged in user filled the comment form and clicked button. Once the form submitted, the user can see its comment odered from the oldest to the newest and the count of comments changed | Works as expected |
+|  Post Comment  | From any persona detail page whilst logged in fill in the comment form below the persona and press "post comment" button . | Logged in user filled the comment form and clicked button. Once the form submitted, the user can see its comment odered from the oldest to the newest and the count of comments changed | Works as expected |
 
 <details>
 <summary>Demo</summary>
@@ -439,7 +441,7 @@ no error to be found.
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-|  Like/Unlike  | From any person detail page whilst logged in go under the persona and clik like or unlike button.  | Logged in user filled clicked the button under the persona. Once the button has been clicked, the count of likes changed and the button itself as well | Works as expected |
+|  Like/Unlike  | From any persons detail page whilst logged in go under the persona and clik like or unlike button.  | Logged in user filled clicked the button under the persona. Once the button has been clicked, the count of likes changed and the button itself as well | Works as expected |
 
 <details>
 <summary>Demo</summary>
@@ -469,7 +471,7 @@ no error to be found.
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-|  Search  | From any page whilst logged in write on the serach field and click the search button located in the right of the nav bar, or if using a small screen device from the list from the hamburger menu toggle  | when the user use wrote a keyword and pressed the search button, he is redirected to the results page | Works as expected |
+|  Search  | From any page whilst logged in write on the serach field and click the search button located in the right of the nav bar, or if using a small screen device from the list from the hamburger menu toggle  | when the user wrote a keyword and pressed the search button, he is redirected to the results page | Works as expected |
 
 <details>
 <summary>Demo</summary>
@@ -482,8 +484,8 @@ During the project I encountered a number of bugs, most of them resulted from mi
 
 | Bug           | Fix           |
 | ------------- | ------------- |
-| Django urls not working | While I was working on the contact app. I couldn't render the template for contact due to the unecessary url for home that I copied and pasted from the app placard. Once I deleted the url. The url for contact worked |
-| Django urls not working | As I wrote the url for PersonaSearch, I forgot to erase the parentheses added by IDE. Once the parentheses were gone. The url worked |
+| Django urls not working | While I was working on the contact app. I couldn't render the template for contact due to the unecessary url home that I copied and pasted from the app placard. Once I deleted the url. The url for contact worked |
+| Django urls not working | As I wrote the url for PersonaSearch, I forgot to erase the parentheses added automatically by IDE. Once the parentheses were gone. The url worked |
 | Class View PersonaDetail not working | It was impossible to render the detail of persona due to misspelling and lower/uppercase sensitiveness. Once the word liked was propoerly corrected. The PersonaDetail could work |
 | Class View PersonaLike  not working| It was impossible to render the view of like because the parameter of the Class was starting with a lowercase. Once it was corrected. The class PersonaLike could work |
 | An overide function from the Class View PersonaDetail not working   | The attribute "user.username" wasn't existed in the data models. Therefore couldn't be called. The ForeignKey user was enough and was indeed existing in the data model  |
