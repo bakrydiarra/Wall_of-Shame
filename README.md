@@ -277,7 +277,7 @@ ___
 A navigation bar that differentiates users who aren't logged in from those who are.
 
 <details>
-<summary>Authentication image</summary>
+<summary>Navbar images</summary>
 <img src="docs/features/navbar_loggedin_user.png">
 <img src="docs/features/navbar_nologgedin_user.png">
 </details>
