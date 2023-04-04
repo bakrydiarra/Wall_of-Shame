@@ -9,7 +9,7 @@
 ## Live Project
 
 
-[Here](https://wall-of-shame.herokuapp.com/accounts/login/?next=/)
+[Here](https://wall-of-shame.herokuapp.com/)
 
 ---
 
