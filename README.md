@@ -156,6 +156,7 @@ The issues that I couldn’t tackle from the "Todo" column ended in the “Won�
 <img src="docs/agile/issue_3.png">
 <img src="docs/agile/issue_4.png">
 </details>
+
 ---
 
 
